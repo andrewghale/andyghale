@@ -1,0 +1,48 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-tablet) {
+        // font-size: 14vw;
+    }
+    #main-title {
+        margin: 0;
+        padding: 0;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 6rem;
+        }
+        @media screen and (max-width: $breakpoint-phone) {
+            font-size: 5rem;
+        }
+    }
+    .underline {
+        display: block;
+        border-bottom: 0.6rem solid $pink;
+        width: 100%;
+    }
+    .subtitle {
+        margin-top: 3rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 4.5vw;
+        }
+    }
+    #typewriter {
+        display: flex;
+        background-color: $blue;
+        padding: 1.5rem;
+        font-size: 4rem;
+        margin: 4rem auto 0rem auto;
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 4.5vw;
+        }
+        .Typewriter__wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            color: $black;
+        }
+        .Typewriter__cursor {
+            color: $black;
+        }
+    }
+}

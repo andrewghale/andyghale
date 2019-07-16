@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    #about-title {
+        position: relative;
+        left: 50px;
+        opacity: 0;
+    }
+    .about-text {
+        padding: 0rem 2rem;
+    }
+}

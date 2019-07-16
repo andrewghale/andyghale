@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1d2138;
+  color: #ededed; }
+
+h1, h2 {
+  margin: 2rem auto; }
+
+h1 {
+  white-space: nowrap;
+  font-size: 9rem;
+  text-shadow: 4px 4px #82cacb;
+  cursor: default; }
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 14vw; } }
+
+h2 {
+  font-size: 3rem; }
+  @media screen and (max-width: 1000px) {
+    h2 {
+      font-size: 4.5vw; } }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+header {
+  display: flex;
+  width: 100vw;
+  padding: 1rem;
+  height: 200px; }
+
+/* unvisited link */
+/* visited link */
+/* mouse over link */
+a:hover {
+  color: #FF00FF; }
+
+/* selected link */
+a:active {
+  color: #0000FF; }
+
+.parent {
+  position: relative;
+  perspective: 500px; }
+
+.hidden {
+  display: none; }
+
+::selection {
+  color: red;
+  background: yellowgreen; }
+
+.logo-holder {
+  margin-left: 50px;
+  display: flex;
+  align-items: center; }
+
+.logo-holder img {
+  height: 100px;
+  width: auto; }
+  .logo-holder img:hover {
+    animation-name: pulse;
+    animation-duration: 500ms; }
+
+.main-nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center; }
+
+.main-nav a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  list-style: none;
+  margin: 0 2rem;
+  padding: 1rem; }
+  .main-nav a:hover {
+    color: darkblue; }
+
+.home-tag,
+.about-tag,
+.contact-tag {
+  background: linear-gradient(to bottom, yellowgreen 0%, yellowgreen 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  text-decoration: none;
+  transition: background-size .07s ease-in-out; }
+  .home-tag:hover,
+  .about-tag:hover,
+  .contact-tag:hover {
+    background-size: 1px 40px; }
+
+.reveal-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1; }
+
+#typewriter {
+  display: flex;
+  background-color: yellowgreen;
+  padding: 1.5rem;
+  font-size: 5rem;
+  text-shadow: 2px 2px 2px #c9b3b3;
+  margin: 0 auto; }
+
+.Typewriter__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: darkblue; }
+
+.Typewriter__cursor {
+  color: darkblue; }
+
+.about-title {
+  position: relative;
+  left: 50px;
+  opacity: 0; }
+
+.about-text {
+  width: 80vw; }
+
+.contact-title {
+  position: relative;
+  left: 50px;
+  top: 50px;
+  opacity: 0; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  width: 100%; }
+  .footer p {
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem; }
+
+.social-links {
+  display: flex;
+  margin-top: 2rem; }
+
+.social-link {
+  margin: 1rem; }
+
+.social-link img {
+  height: 50px;
+  width: auto; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+.pulse {
+  animation-name: pulse; }
+
+/*# sourceMappingURL=main.css.map */
