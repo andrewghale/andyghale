@@ -57,7 +57,9 @@ gulp.task("build", gulp.series("minifyScripts", "compileSass", function () {
         "css/app.css",
         "js/app.min.js",
         "img/**",
-        "index.html"
+        "index.html",
+        "about.html",
+        "contact.html"
       ],
       { base: "./" }
     )
