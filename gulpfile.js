@@ -11,7 +11,7 @@ var plumber = require("gulp-plumber");
 
 gulp.task("concatScripts", function () {
   return gulp
-    .src("js/main.js")
+    .src(["js/jquery.js", "js/typewriterjs/dist/*.js", "js/main.js"])
     .pipe(plumber())
     .pipe(maps.init())
     .pipe(concat("app.js"))
@@ -55,7 +55,7 @@ gulp.task("build", gulp.series("minifyScripts", "compileSass", function () {
     .src(
       [
         "css/app.css",
-        "js/app.min.js",
+        "js/app.js",
         "img/**",
         "index.html",
         "about.html",
