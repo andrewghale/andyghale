@@ -1,0 +1,3 @@
+# global context
+[build]
+  command = "gulp build"

@@ -38,8 +38,11 @@ gulp.task("compileSass", function () {
 });
 
 gulp.task("watchFiles", function () {
+
+  var files = 'js/main.js';
+
   gulp.watch("scss/**/*.scss", gulp.parallel("compileSass"));
-  gulp.watch("js/**/*.js", gulp.parallel("concatScripts"));
+  gulp.watch(files, gulp.parallel("concatScripts"));
 });
 
 gulp.task("clean", function () {
@@ -51,8 +54,10 @@ gulp.task("build", gulp.series("minifyScripts", "compileSass", function () {
   return gulp
     .src(
       [
-        "css/application.css",
+        "css/app.css",
         "js/app.min.js",
+        "img/**",
+        "index.html"
       ],
       { base: "./" }
     )

@@ -6,6 +6,7 @@ $(document).ready(function () {
     // }, 3050);
 });
 
+
 $(function () {
     $('#main-title').animate({ opacity: "1" }, 500);
 });
