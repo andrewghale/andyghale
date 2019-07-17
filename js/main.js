@@ -27,16 +27,19 @@ const typewriter = new Typewriter('#typewriter', {
 typewriter
     .typeString('HTML / S(CSS)')
     .pauseFor(500)
-    .deleteAll(30)
+    .deleteAll(40)
     .start()
     .typeString('Javascript')
     .pauseFor(500)
-    .deleteAll(30)
+    .deleteAll(40)
     .start()
     .typeString('Wordpress')
     .pauseFor(500)
-    .deleteAll(30)
+    .deleteAll(40)
     .start()
     .typeString('PHP')
     .pauseFor(500)
-    .deleteAll(30);
+    .deleteAll(40)
+    .typeString('Gulp')
+    .pauseFor(500)
+    .deleteAll(40);

@@ -1,29 +1,37 @@
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media screen and (max-width: $breakpoint-tablet) {
-        // font-size: 14vw;
-    }
-    #main-title {
+    .main-title {
         margin: 0;
         padding: 0;
         @media screen and (max-width: $breakpoint-tablet) {
+            margin-top: 4rem;
             font-size: 6rem;
         }
         @media screen and (max-width: $breakpoint-phone) {
             font-size: 5rem;
         }
+        @media screen and (max-width: $breakpoint-xs) {
+            padding: 0 1rem;
+            font-size: 4rem;
+            text-align: center;
+        }
     }
     .underline {
         display: block;
         border-bottom: 0.6rem solid $pink;
-        width: 100%;
+        @media screen and (max-width: $breakpoint-phone) {
+            border-bottom: 0.3rem solid $pink;
+        }
     }
     .subtitle {
-        margin-top: 3rem;
-        @media screen and (max-width: $breakpoint-tablet) {
-            font-size: 4.5vw;
+        margin-top: 1rem;
+        font-size: 3rem;
+        @media screen and (max-width: $breakpoint-phone) {
+            font-size: 2.2rem;
+            margin-top: 0.6rem;
+        }
+        @media screen and (max-width: $breakpoint-phone) {
+            font-size: 1.8rem;
+            margin-top: 0.6rem;
         }
     }
     #typewriter {
@@ -31,9 +39,13 @@
         background-color: $blue;
         padding: 1.5rem;
         font-size: 4rem;
-        margin: 4rem auto 0rem auto;
+        margin: 4rem auto 0 auto;
         @media screen and (max-width: $breakpoint-tablet) {
             font-size: 4.5vw;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            margin: 1rem auto 0 auto;
+            padding: 0.1rem;
         }
         .Typewriter__wrapper {
             display: flex;

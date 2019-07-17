@@ -1,16 +1,19 @@
 .site-header {
     display: flex;
-    width: 100vw;
-    padding: 1rem;
-    margin: 1rem;
+    width: 100%;
+    padding: 2rem;
     height: auto;
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 1rem;
+    }
     .logo-holder {
         display: flex;
         align-items: center;
+        height: fit-content;
         @media screen and (max-width: $breakpoint-tablet) {
             margin-left: 0;
         }
-        img {
+        svg {
             height: 100px;
             width: auto;
             &:hover {
@@ -27,13 +30,17 @@
         @media screen and (max-width: $breakpoint-tablet) {
             padding: 0 1rem;
         }
+        @media screen and (max-width: $breakpoint-xs) {
+            flex-direction: column;
+            padding: 0;
+        }
         .tag {
-            background:
-            linear-gradient(
-                to bottom, $blue 0%,
-                $blue 100%
-            );
-            background-position: 0 100%;
+            background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
+            margin: 0 2rem;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-position: 0 50%;
             background-repeat: repeat-x;
             background-size: 0px 0px;
             text-decoration: none;
@@ -42,23 +49,43 @@
                 margin: 0 0.3rem;
                 font-size: 1.2rem;
             }
+            @media screen and (max-width: $breakpoint-xs) {
+                align-self: flex-end;
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
             &:hover {
                 background-size: 1px 40px;
-            }
-        }
-        a {
-            font-size: 1.5rem;
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50px;
-            list-style: none;
-            margin: 0 2rem;
-            padding: 1rem;
-            &:hover {
                 color: $black;
             }
         }
     }
+}
+
+.orange-square {
+    stroke-dashoffset:0;
+	stroke-dasharray:1400;
+    animation: draw 4s ease-in-out 2s 1;
+	fill-opacity: 0;
+}
+.pink-square {
+    stroke-dashoffset:0;
+	stroke-dasharray:1400;
+    animation: draw 5s ease-in-out 1s 1;
+	fill-opacity: 0;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset:0;
+        stroke-dasharray:1400;
+    };
+    50% {
+        stroke-dashoffset:1400;
+        stroke-dasharray: 300
+    };
+    90% {
+        stroke-dashoffset:50;
+        stroke-dasharray: 1200
+    };
 }

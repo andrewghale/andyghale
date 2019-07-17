@@ -6,12 +6,13 @@ html, body {
     height: 100%;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Questrial', sans-serif;
     font-size: 18px;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -19,10 +20,13 @@ body {
     background-color: rgba(33, 41, 46, 1);
     background-image: url('../img/subtle-prism.svg');
     /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
 }
 
-.blackBg {
-    background-color: black;
+h1, h2, h3, h4, p, a {
+    &::selection {
+        background: $blue;
+    }
 }
 
 h1, h2 {
@@ -44,6 +48,13 @@ p {
 a {
     color: inherit;
     text-decoration: none;
+    &#no-link {
+        cursor: default;
+        background: none;
+        &:hover {
+            color: $pink;
+        }
+    }
 }
 
 ul {
@@ -63,26 +74,36 @@ ul {
     }
 }
 
-.show {
-    opacity: 1;
-}
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes pulse {
+    /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
     from {
       transform: scale3d(1, 1, 1);
     }
-
     50% {
       transform: scale3d(1.05, 1.05, 1.05);
     }
-
     to {
       transform: scale3d(1, 1, 1);
     }
-  }
+}
 
-  .pulse {
+.pulse {
     animation-name: pulse;
+}
+
+.page-title {
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $breakpoint-tablet) {
+        font-size: 6rem;
+    }
+    @media screen and (max-width: $breakpoint-phone) {
+        font-size: 5rem;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        margin-top: 2rem;
+        padding: 0 1rem;
+        font-size: 3rem;
+        text-align: center;
+    }
 }

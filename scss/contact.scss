@@ -1,9 +1,18 @@
 .contact {
     display: flex;
     justify-content: space-between;
-    #contact-title {
-        position: relative;
-        top: 50px;
-        opacity: 0;
+    .contact-text {
+        padding: 0rem 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.highlighter {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    background-color: $pink;
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: 6vw;
     }
 }
