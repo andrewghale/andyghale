@@ -10589,12 +10589,7 @@ return jQuery;
 } );
 $(document).ready(function () {
     $(".reveal-page").delay(100).animate({ opacity: 1 }, 500);
-    // $("#typewriter").css("background-color", "gray");
-    // setTimeout(function () {
-    //     $("#typewriter").css("background", "yellow");
-    // }, 3050);
 });
-
 
 $(function () {
     $('#main-title').animate({ opacity: "1" }, 500);
