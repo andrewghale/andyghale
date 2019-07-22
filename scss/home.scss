@@ -29,13 +29,6 @@
             text-align: center;
         }
     }
-    .underline {
-        display: block;
-        border-bottom: 0.6rem solid $pink;
-        @media screen and (max-width: $breakpoint-phone) {
-            border-bottom: 0.3rem solid $pink;
-        }
-    }
     .subtitle {
         margin-top: 1rem;
         font-size: 3rem;
