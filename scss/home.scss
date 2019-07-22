@@ -2,16 +2,30 @@
     .main-title {
         margin: 0;
         padding: 0;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            height: 5px;
+            width: -webkit-fill-available;
+            background: $pink;
+            left: 0px;
+            right: 0px;
+            z-index: 0;
+        }
         @media screen and (max-width: $breakpoint-tablet) {
             margin-top: 4rem;
             font-size: 6rem;
         }
         @media screen and (max-width: $breakpoint-phone) {
-            font-size: 5rem;
+            font-size: 4.9rem;
         }
         @media screen and (max-width: $breakpoint-xs) {
-            padding: 0 1rem;
             font-size: 4rem;
+            padding: 0 1rem;
+            margin-top: 3rem;
             text-align: center;
         }
     }
@@ -26,18 +40,18 @@
         margin-top: 1rem;
         font-size: 3rem;
         @media screen and (max-width: $breakpoint-phone) {
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-top: 0.6rem;
         }
         @media screen and (max-width: $breakpoint-phone) {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-top: 0.6rem;
         }
     }
     #typewriter {
         display: flex;
         background-color: $blue;
-        padding: 1.5rem;
+        padding: 1rem;
         font-size: 4rem;
         margin: 4rem auto 0 auto;
         @media screen and (max-width: $breakpoint-tablet) {
@@ -45,7 +59,8 @@
         }
         @media screen and (max-width: $breakpoint-xs) {
             margin: 1rem auto 0 auto;
-            padding: 0.1rem;
+            padding: 0.3rem;
+            font-size: 8vw;
         }
         .Typewriter__wrapper {
             display: flex;

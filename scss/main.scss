@@ -22,14 +22,10 @@ body {
     background-attachment: fixed;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p {
     &::selection {
         background: $blue;
     }
-}
-
-h1, h2 {
-    margin: 1rem auto;
 }
 
 h1 {
@@ -52,13 +48,17 @@ a {
         background: none;
         &:hover {
             color: $pink;
+            @media screen and (max-width: $breakpoint-tablet) {
+                color: inherit;
+            }
         }
     }
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+body.about,
+body.contact {
+    display: flex;
+    justify-content: space-between;
 }
 
 .reveal-page {
@@ -68,41 +68,48 @@ ul {
     flex-direction: column;
     flex-grow: 1;
     opacity: 0;
-    @media screen and (max-width: 769px) {
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin: 0;
         display: flex;
     }
-}
-
-@keyframes pulse {
-    /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-    from {
-      transform: scale3d(1, 1, 1);
+    @media screen and (max-width: $breakpoint-phone) {
+        padding: 0 1.5rem;
     }
-    50% {
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-    to {
-      transform: scale3d(1, 1, 1);
-    }
-}
-
-.pulse {
-    animation-name: pulse;
 }
 
 .page-title {
     margin: 0;
     padding: 0;
+    display: flex;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 0.4rem;
+        background: $pink;
+        opacity: 0;
+        left: -10px;
+        right: 10px;
+        animation: underline-slide 1s ease-in-out 0.5s 1 forwards;
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-left: 1rem;
+        }
+        @media screen and (max-width: $breakpoint-phone) {
+            margin-left: 0;
+        }
+    }
     @media screen and (max-width: $breakpoint-tablet) {
+        align-self: flex-start;
         font-size: 6rem;
+        padding-left: 1rem;
     }
     @media screen and (max-width: $breakpoint-phone) {
-        font-size: 5rem;
+        font-size: 15vw;
+        padding-left: 0;
     }
     @media screen and (max-width: $breakpoint-xs) {
         margin-top: 2rem;
-        padding: 0 1rem;
-        font-size: 3rem;
         text-align: center;
     }
 }

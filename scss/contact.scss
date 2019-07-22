@@ -1,18 +1,33 @@
 .contact {
-    display: flex;
-    justify-content: space-between;
     .contact-text {
-        padding: 0rem 2rem;
+        padding: 0 2rem;
         max-width: 1000px;
-        margin: 0 auto;
+        @media screen and (max-width: $breakpoint-tablet) {
+            align-self: flex-start;
+            padding: 0 1rem;
+        }
+        @media screen and (max-width: $breakpoint-phone) {
+            align-self: flex-start;
+            padding: 0;
+        }
+        .pink-highlight,
+        .orange-highlight {
+            font-size: 2.5rem;
+            padding: 0.5rem 0.7rem;
+            border-radius: $border-radius;
+            @media screen and (max-width: $breakpoint-tablet) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: 6vw;
+            }
+        }
+        .pink-highlight {
+            background-color: $pink;
+        }
+        .orange-highlight {
+            background-color: $orange;
+        }
     }
 }
 
-.highlighter {
-    font-size: 2.5rem;
-    padding: 0.5rem;
-    background-color: $pink;
-    @media screen and (max-width: $breakpoint-xs) {
-        font-size: 6vw;
-    }
-}

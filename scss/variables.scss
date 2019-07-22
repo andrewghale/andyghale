@@ -2,7 +2,99 @@ $orange: #ED9E3B;
 $blue: #82CACB;
 $pink: #E8627B;
 $black: rgb(40, 40, 40);
+$white: white;
+$transparent: rgba(0, 0, 0, 0);
 
 $breakpoint-tablet: 769px;
 $breakpoint-phone: 600px;
 $breakpoint-xs: 500px;
+
+$border-radius: 5px;
+
+@keyframes underline-slide {
+    0% {
+        opacity: 0;
+        left: -10px;
+        right: 10px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+        right: 0px;
+    }
+}
+@keyframes underline-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset:0;
+        stroke-dasharray:1400;
+    };
+    50% {
+        stroke-dashoffset:1400;
+        stroke-dasharray: 300
+    };
+    90% {
+        stroke-dashoffset:50;
+        stroke-dasharray: 1200
+    };
+}
+
+@keyframes grow-slide {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+    1% {
+        opacity: 0
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.25;
+        transform: translate(-10px, 0px)
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+    80% {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

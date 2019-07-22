@@ -13,9 +13,12 @@
         @media screen and (max-width: $breakpoint-tablet) {
             margin-left: 0;
         }
-        svg {
+        .home-logo {
             height: 100px;
             width: auto;
+            @media screen and (max-width: $breakpoint-xs) {
+                height: 60px;
+            }
             &:hover {
                 animation-name: pulse;
                 animation-duration: 500ms;
@@ -27,13 +30,8 @@
         flex: 1;
         justify-content: flex-end;
         align-items: center;
-        @media screen and (max-width: $breakpoint-tablet) {
-            padding: 0 1rem;
-        }
-        @media screen and (max-width: $breakpoint-xs) {
-            flex-direction: column;
-            padding: 0;
-        }
+        padding-top: 1rem;
+        max-height: 100px;
         .tag {
             background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
             margin: 0 2rem;
@@ -46,17 +44,22 @@
             text-decoration: none;
             transition: background-size .07s ease-in-out;
             @media screen and (max-width: $breakpoint-tablet) {
+                background: linear-gradient(to bottom, $transparent 0%, $transparent 100%);
                 margin: 0 0.3rem;
                 font-size: 1.2rem;
+                transition: background-size .7s ease-in-out;
             }
             @media screen and (max-width: $breakpoint-xs) {
                 align-self: flex-end;
-                padding: 0.5rem;
                 font-size: 0.9rem;
             }
             &:hover {
                 background-size: 1px 40px;
                 color: $black;
+                transition: background-size 0.07s ease-in-out;
+                @media screen and (max-width: $breakpoint-tablet) {
+                    color: $white;
+                }
             }
         }
     }
@@ -74,93 +77,4 @@
 	stroke-dasharray:1400;
     animation: draw 5s ease-in-out 1s 1;
 	fill-opacity: 0;
-}
-
-@keyframes draw {
-    0% {
-        stroke-dashoffset:0;
-        stroke-dasharray:1400;
-    };
-    50% {
-        stroke-dashoffset:1400;
-        stroke-dasharray: 300
-    };
-    90% {
-        stroke-dashoffset:50;
-        stroke-dasharray: 1200
-    };
-}
-
-.holder {
-    height: 200px;
-    width: 200px;
-    float: left;
-    opacity: 1;
-    #svg1 {
-        position: relative;
-        height: 100px;
-        width: auto;
-        .orange-square-grow,
-        .blue-square-grow,
-        .pink-square-grow
-        {
-            position: absolute;
-            transform: translate(0px, 0px);
-        }
-        .a-letter-grow,
-        .h-letter-grow {
-            transform-origin: center;
-        }
-        &:hover {
-            .orange-square-grow {
-                animation: grow-slide 0.3s ease-in-out 0s 1 forwards;
-            }
-            .blue-square-grow {
-                animation: grow-slide 0.7s ease-in-out 0s 1 forwards;
-            }
-            .pink-square-grow {
-                animation: grow-slide 1.3s ease-in-out 0s 1 forwards;
-            }
-            .a-letter-grow,
-            .h-letter-grow {
-                animation: grow 1.5s ease-in-out 0s 1 forwards;
-            }
-        }
-    }
-}
-
-@keyframes grow-slide {
-    0% {
-        opacity: 1;
-        transform: translate(0px, 0px);
-    }
-    5% {
-        opacity: 0
-    }
-    50% {
-        opacity: 0.25;
-        transform: translate(-10px, 0px)
-    }
-    75% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes grow {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    80% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
