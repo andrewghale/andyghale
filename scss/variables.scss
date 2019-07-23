@@ -4,6 +4,8 @@ $pink: #E8627B;
 $black: #282828;
 $white: #fafafa;
 
+$transp-white: rgba(255, 255, 255, 0.3);
+
 $body-color: #ededed;
 
 $transparent: rgba(0, 0, 0, 0);
@@ -14,6 +16,8 @@ $bp-phone: 500px;
 $bp-xs: 415px;
 
 $border-radius: 5px;
+
+$title-glow: 0px 0px 10px $transp-white;
 
 @keyframes underline-slide {
     0% {

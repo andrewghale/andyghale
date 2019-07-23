@@ -335,7 +335,8 @@ body.contact {
   margin-bottom: 0;
   padding: 0;
   position: relative;
-  letter-spacing: 0.4rem; }
+  letter-spacing: 0.4rem;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); }
   @media screen and (max-width: 770px) {
     .home .main-title {
       letter-spacing: 0.18rem;
@@ -354,11 +355,13 @@ body.contact {
     background: #E8627B;
     left: 0px;
     right: 0px;
-    z-index: -1; }
+    z-index: -1;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); }
 
 .home .subtitle {
   margin-top: 0.2rem;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); }
   @media screen and (max-width: 770px) {
     .home .subtitle {
       font-size: 2rem; } }
