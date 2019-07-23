@@ -117,3 +117,27 @@ $border-radius: 5px;
         transform: scale(1);
     }
 }
+
+@keyframes bg-zoom {
+    0% {
+        background-size: 17%;
+        background-position-y: 0%;
+        background-position-x: 0%;
+    }
+    33% {
+        background-position-x: 9%;
+        background-position-y: 0%;
+    }
+    50% {
+        background-size: 15%;
+    }
+    66% {
+        background-position-x: 9%;
+        background-position-y: 9%;
+    }
+    100% {
+        background-size: 17%;
+        background-position-y: 0%;
+        background-position-x: 0%;
+    }
+}

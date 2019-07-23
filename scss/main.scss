@@ -1,3 +1,17 @@
+body.bg-zoom {
+    /* background by SVGBackgrounds.com */
+    background-image: url('../img/endless-constellation.svg');
+    background-attachment: fixed;
+    background-size: 17%;
+    background-position: 0%;
+    transition: all .7s;
+    animation: bg-zoom 25s ease-in-out 0s infinite alternate forwards running;
+    @media screen and (max-width: $bp-tablet) {
+        animation: none;
+        background-size: 50%;
+    }
+}
+
 body.about,
 body.contact {
     display: flex;
