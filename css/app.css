@@ -23,6 +23,16 @@
   to {
     transform: scale3d(1, 1, 1); } }
 
+@keyframes pulse-pause {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  70% {
+    transform: scale3d(1, 1, 1); }
+  80% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
 @keyframes draw {
   0% {
     stroke-dashoffset: 0;
@@ -79,7 +89,7 @@ body {
   overflow-x: hidden;
   color: #ededed;
   background-color: #21292e;
-  background-image: url("../img/subtle-prism.svg");
+  background-image: url("../img/endless-constellation.svg");
   /* background by SVGBackgrounds.com */
   background-attachment: fixed; }
 
@@ -106,7 +116,7 @@ body.contact {
 
 .reveal-page {
   margin: 0 auto;
-  padding: 1rem 1.5rem 0 1.5rem;
+  padding: 1rem 2rem 0 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -115,7 +125,7 @@ body.contact {
   opacity: 0; }
   @media screen and (max-width: 500px) {
     .reveal-page {
-      padding: 1rem 1rem;
+      padding: 1rem 2rem;
       margin: 0; } }
   @media screen and (max-width: 415px) {
     .reveal-page {
@@ -130,7 +140,7 @@ body.contact {
       content: "";
       position: absolute;
       bottom: 0;
-      height: 0.4rem;
+      height: 0.3rem;
       background: #E8627B;
       opacity: 0;
       left: -10px;
@@ -167,6 +177,7 @@ body.contact {
           font-size: 1.25rem; } }
       @media screen and (max-width: 415px) {
         .reveal-page .page-text .text {
+          font-size: 0.9rem;
           letter-spacing: 0.07rem;
           line-height: 1.5rem; } }
 
@@ -279,11 +290,12 @@ body.contact {
           margin: 0.5rem 0; } }
   .footer .copyright {
     margin-right: 1.5rem;
-    align-self: center; }
+    align-self: center;
+    color: #aaaaaa; }
     @media screen and (max-width: 770px) {
       .footer .copyright {
         margin-top: 1.8rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         display: flex;
         align-self: center; } }
     @media screen and (max-width: 500px) {
@@ -291,30 +303,33 @@ body.contact {
         align-self: flex-end; } }
 
 .home .main-title {
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  letter-spacing: 0.4rem; }
+  @media screen and (max-width: 770px) {
+    .home .main-title {
+      letter-spacing: 0.18rem;
+      font-size: 5.6rem; } }
+  @media screen and (max-width: 500px) {
+    .home .main-title {
+      letter-spacing: 0;
+      font-size: 4rem; } }
   .home .main-title:before {
     content: '';
     display: block;
     position: absolute;
     bottom: 0px;
-    height: 6px;
+    height: 8px;
     width: -webkit-fill-available;
     background: #E8627B;
     left: 0px;
     right: 0px;
-    z-index: 0; }
-  @media screen and (max-width: 770px) {
-    .home .main-title {
-      font-size: 4.9rem; } }
-  @media screen and (max-width: 500px) {
-    .home .main-title {
-      font-size: 14vw; } }
+    z-index: -1; }
 
 .home .subtitle {
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
   font-size: 3.5rem; }
   @media screen and (max-width: 770px) {
     .home .subtitle {
@@ -380,9 +395,24 @@ body.contact {
   padding: 0.5rem 0.7rem;
   border-radius: 5px;
   background-color: #E8627B;
-  margin-top: 10rem; }
+  margin-top: 8rem;
+  animation-name: pulse-pause;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running; }
+  .contact .pink-highlight:hover {
+    cursor: pointer;
+    animation: none; }
   @media screen and (max-width: 770px) {
     .contact .pink-highlight {
       font-size: 2rem; } }
+  @media screen and (max-width: 500px) {
+    .contact .pink-highlight {
+      margin-top: 4rem;
+      font-size: 1.5rem; } }
 
 /*# sourceMappingURL=app.css.map */

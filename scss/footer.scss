@@ -42,9 +42,11 @@
     .copyright {
         margin-right: 1.5rem;
         align-self: center;
+        color: $copyright-color;
+        // font-size: 1rem;
         @media screen and (max-width: $bp-tablet) {
             margin-top: 1.8rem;
-            font-size: 1rem;
+            font-size: 0.8rem;
             display: flex;
             align-self: center;
         }

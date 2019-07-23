@@ -3,7 +3,11 @@ $blue: #82CACB;
 $pink: #E8627B;
 $black: #282828;
 $white: #fafafa;
+
+$body-color: #ededed;
+
 $transparent: rgba(0, 0, 0, 0);
+$copyright-color: rgb(170, 170, 170);
 
 $bp-tablet: 770px;
 $bp-phone: 500px;
@@ -41,6 +45,21 @@ $border-radius: 5px;
       transform: scale3d(1.05, 1.05, 1.05);
     }
     to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse-pause {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    70% {
+      transform: scale3d(1, 1, 1);
+    }
+    80% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
       transform: scale3d(1, 1, 1);
     }
 }
