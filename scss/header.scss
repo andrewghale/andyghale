@@ -3,20 +3,20 @@
     width: 100%;
     padding: 2rem;
     height: auto;
-    @media screen and (max-width: $breakpoint-xs) {
+    @media screen and (max-width: $bp-phone) {
         padding: 1rem;
     }
     .logo-holder {
         display: flex;
         align-items: center;
         height: fit-content;
-        @media screen and (max-width: $breakpoint-tablet) {
+        @media screen and (max-width: $bp-tablet) {
             margin-left: 0;
         }
         .home-logo {
             height: 100px;
             width: auto;
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: $bp-phone) {
                 height: 60px;
             }
             &:hover {
@@ -43,13 +43,13 @@
             background-size: 0px 0px;
             text-decoration: none;
             transition: background-size .07s ease-in-out;
-            @media screen and (max-width: $breakpoint-tablet) {
+            @media screen and (max-width: $bp-tablet) {
                 background: linear-gradient(to bottom, $transparent 0%, $transparent 100%);
                 margin: 0 0.3rem;
                 font-size: 1.2rem;
                 transition: background-size .7s ease-in-out;
             }
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: $bp-phone) {
                 align-self: flex-end;
                 font-size: 0.9rem;
             }
@@ -57,7 +57,7 @@
                 background-size: 1px 40px;
                 color: $black;
                 transition: background-size 0.07s ease-in-out;
-                @media screen and (max-width: $breakpoint-tablet) {
+                @media screen and (max-width: $bp-tablet) {
                     color: $white;
                 }
             }

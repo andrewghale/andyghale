@@ -1,46 +1,13 @@
 .contact {
-    .contact-text {
-        display: flex;
-        padding: 0 2rem;
-        max-width: 1000px;
-        margin-top: 4rem;
-        margin-left: 2rem;
-        @media screen and (max-width: $breakpoint-tablet) {
-            align-self: flex-start;
-            padding: 0;
-            margin-left: 1rem;
-            margin-top: 2rem;
-        }
-        @media screen and (max-width: $breakpoint-phone) {
-            align-self: flex-start;
-            padding: 0;
-            margin-left: 0;
-        }
-        .text {
-            width: 70%;
-            margin-right: auto;
-            letter-spacing: 0.15rem;
-            line-height: 2rem;
-            @media screen and (max-width: $breakpoint-tablet) {
-                width: 100%;
-            }
-        }
-        .pink-highlight {
+    .pink-highlight {
+        font-size: 2rem;
+        padding: 0.5rem 0.7rem;
+        border-radius: $border-radius;
+        background-color: $pink;
+        margin-top: 10rem;
+        @media screen and (max-width: $bp-tablet) {
             font-size: 2rem;
-            padding: 0.5rem 0.7rem;
-            border-radius: $border-radius;
-            background-color: $pink;
-            @media screen and (max-width: $breakpoint-tablet) {
-                font-size: 2rem;
-            }
-            @media screen and (max-width: $breakpoint-phone) {
-                margin-left: 0;
-            }
         }
-        // .email {
-        //     align-self: flex-start !important;
-        // }
     }
-
 }
 

@@ -1,60 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Questrial', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    color: rgb(237, 237, 237);
-    background-color: rgba(33, 41, 46, 1);
-    background-image: url('../img/subtle-prism.svg');
-    /* background by SVGBackgrounds.com */
-    background-attachment: fixed;
-}
-
-h1, h2, h3, h4, p {
-    &::selection {
-        background: $blue;
-    }
-}
-
-h1 {
-    font-size: 8rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-p {
-    font-size: 1.7rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    &#no-link {
-        cursor: default;
-        background: none;
-        &:hover {
-            color: $pink;
-            @media screen and (max-width: $breakpoint-tablet) {
-                color: inherit;
-            }
-        }
-    }
-}
-
 body.about,
 body.contact {
     display: flex;
@@ -63,53 +6,71 @@ body.contact {
 
 .reveal-page {
     margin: 0 auto;
+    padding: 1rem 1.5rem 0 1.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+    max-width: 1000px;
     opacity: 0;
-    @media screen and (max-width: $breakpoint-tablet) {
+    @media screen and (max-width: $bp-phone) {
+        padding: 1rem 1rem;
         margin: 0;
+    }
+    @media screen and (max-width: $bp-xs) {
+        padding-top: 0rem;
+        margin: 0;
+    }
+    .page-title {
+        margin: 0 auto 0 0;
+        padding: 0;
         display: flex;
-    }
-    @media screen and (max-width: $breakpoint-phone) {
-        padding: 0 1.5rem;
-    }
-}
-
-.page-title {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        height: 0.4rem;
-        background: $pink;
-        opacity: 0;
-        left: -10px;
-        right: 10px;
-        animation: underline-slide 1s ease-in-out 0.5s 1 forwards;
-        @media screen and (max-width: $breakpoint-tablet) {
-            margin-left: 1rem;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 0.4rem;
+            background: $pink;
+            opacity: 0;
+            left: -10px;
+            right: 10px;
+            animation: underline-slide 1s ease-in-out 0.5s 1 forwards;
+            @media screen and (max-width: $bp-tablet) {
+                margin-left: 0rem;
+                height: 0.3rem;
+            }
         }
-        @media screen and (max-width: $breakpoint-phone) {
-            margin-left: 0;
+        @media screen and (max-width: $bp-tablet) {
+            align-self: flex-start;
+            font-size: 6rem;
+            padding-left: 0rem;
+        }
+        @media screen and (max-width: $bp-phone) {
+            font-size: 5rem;
+            margin-top: 0.5rem;
+        }
+        @media screen and (max-width: $bp-xs) {
+            font-size: 3rem;
+            margin-top: 0.2rem;
         }
     }
-    @media screen and (max-width: $breakpoint-tablet) {
-        align-self: flex-start;
-        font-size: 6rem;
-        padding-left: 1rem;
-    }
-    @media screen and (max-width: $breakpoint-phone) {
-        font-size: 15vw;
-        padding-left: 0;
-    }
-    @media screen and (max-width: $breakpoint-xs) {
-        margin-top: 2rem;
-        text-align: center;
+    .page-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        padding-right: 2rem;
+        margin-right: auto;
+        .text {
+            letter-spacing: 0.12rem;
+            line-height: 2.3rem;
+            @media screen and (max-width: $bp-phone) {
+                font-size: 1.25rem;
+            }
+            @media screen and (max-width: $bp-xs) {
+                letter-spacing: 0.07rem;
+                line-height: 1.5rem;
+            }
+        }
     }
 }

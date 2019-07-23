@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: rgb(237, 237, 237);
+    background-color: rgba(33, 41, 46, 1);
+    background-image: url('../img/subtle-prism.svg');
+    /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, p {
+    &::selection {
+        background: $blue;
+    }
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
