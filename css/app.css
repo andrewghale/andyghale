@@ -135,7 +135,7 @@ body.bg-zoom {
   @media screen and (max-width: 770px) {
     body.bg-zoom {
       animation: none;
-      background-size: 50%; } }
+      background-size: 40%; } }
 
 body.about,
 body.contact {

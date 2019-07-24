@@ -8,7 +8,7 @@ body.bg-zoom {
     animation: bg-zoom 25s ease-in-out 0s infinite alternate forwards running;
     @media screen and (max-width: $bp-tablet) {
         animation: none;
-        background-size: 50%;
+        background-size: 40%;
     }
 }
 
