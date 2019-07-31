@@ -10589,20 +10589,12 @@ return jQuery;
 } );
 $(document).ready(function () {
     $(".reveal-page").delay(100).animate({ opacity: 1 }, 500);
-});
-
-$(function () {
     $('#main-title').animate({ opacity: "1" }, 500);
-});
-
-$(function () {
     $('#about-title').animate({ left: 0, opacity: "1" }, 500);
-});
-
-$(function () {
     $('#contact-title').animate({ top: 0, opacity: "1" }, 500);
 });
 
+// Typewriter
 const typewriter = new Typewriter('#typewriter', {
     autoStart: true,
     loop: true,
