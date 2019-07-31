@@ -1,0 +1,139 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
+    <defs>
+        <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="red"/>
+        <stop offset="100%" stop-color="orange"/>
+      </linearGradient>
+    </defs>
+    <rect fill="url(#Gradient2)" width='1600' height='900' />
+    <g class="furthest" stroke="white" stroke-width="1.5" stroke-linecap="round">
+        <polygon fill='#cc0000' points='957 900 539 900 1396 900'>
+            <animate
+                attributeName="points"
+                dur="0.7s"
+                fill="freeze"
+                from="957 900 539 900 1396 900"
+                to="957 450 539 900 1396 900"
+                begin="2.3s"
+            />
+        </polygon>
+        <polygon fill='#aa0000' points='957 900 872.9 900 1396 900'>
+            <animate
+                attributeName="points"
+                dur="0.7s"
+                fill="freeze"
+                from="957 900 872.9 900 1396 900"
+                to="957 451 872.9 900 1396 900"
+                begin="2.3s"
+            />
+        </polygon>
+    </g>
+    <g class="leftest" stroke="white" stroke-width="1.5" stroke-linecap="round">
+        <polygon fill='#d6002b' points='-60 900 398 900 816 900'>
+            <animate
+                attributeName="points"
+                dur="0.3s"
+                fill="freeze"
+                from="-60,900, 398,900, 816,900"
+                to="-60,900, 398,662, 816,900"
+                begin="3s"
+            />
+        </polygon>
+        <polygon fill='#b10022' points='337 900 398 900 816 900'>
+            <animate
+                attributeName="points"
+                dur="0.3s"
+                fill="freeze"
+                from="337 900 398 900 816 900"
+                to="337 900 398 663 816 900"
+                begin="3s"
+            />
+        </polygon>
+    </g>
+    <g class="mid-right" stroke="white" stroke-width="1.5" stroke-linecap="round">
+        <polygon fill='#d9004b' points='1203 900 1552 900 876 900'>
+            <animate
+                attributeName="points"
+                dur="0.4s"
+                fill="freeze"
+                from="1203 900 1552 900 876 900"
+                to="1203 546 1552 900 876 900"
+                begin="2.5s"
+            />
+        </polygon>
+        <polygon fill='#b2003d' points='1203 900 1552 900 1162 900'>
+            <animate
+                attributeName="points"
+                dur="0.4s"
+                fill="freeze"
+                from="1203 900 1552 900 1162 900"
+                to="1203 547 1552 900 1162 900"
+                begin="2.5s"
+            />
+        </polygon>
+    </g>
+    <g class="mid-left" stroke="white" stroke-width="1.5" stroke-linecap="round">
+        <polygon fill='#d3006c' points='641 900 886 900 367 900'>
+            <animate
+                attributeName="points"
+                dur="0.5s"
+                fill="freeze"
+                from="641 900 886 900 367 900"
+                to="641 695 886 900 367 900"
+                begin="2.7s"
+            />
+        </polygon>
+        <polygon fill='#ac0057' points='587 900 641 900 886 900'>
+            <animate
+                attributeName="points"
+                dur="0.5s"
+                fill="freeze"
+                from="587 900 641 900 886 900"
+                to="587 900 641 696 886 900"
+                begin="2.7s"
+            />
+        </polygon>
+    </g>
+    <g class="rightest" stroke="white" stroke-width="1.5" stroke-linecap="round">
+        <polygon fill='#c4008c' points='1710 900 1401 900 1096 900'>
+            <animate
+                attributeName="points"
+                dur="0.3s"
+                fill="freeze"
+                from="1710 900 1401 900 1096 900"
+                to="1710 900 1401 632 1096 900"
+                begin="2.3s"
+            />
+        </polygon>
+        <polygon fill='#9e0071' points='1710 900 1401 900 1365 900'>
+            <animate
+                attributeName="points"
+                dur="0.3s"
+                fill="freeze"
+                from="1710 900 1401 900 1365 900"
+                to="1710 900 1401 632 1365 900"
+                begin="2.3s"
+            />
+        </polygon>
+    </g>
+    <g class="nearest" stroke="white" stroke-width="2">
+        <polygon fill='#aa00aa' points='1210 900 971 687 725 900'>
+            <animate
+                attributeName="points"
+                dur="0.5s"
+                fill="freeze"
+                from="1210 900 971 900 725 900"
+                to="1210 900 971 687 725 900"
+            />
+        </polygon>
+        <polygon fill='#880088' points='943 900 1210 900 971 688'>
+            <animate
+                attributeName="points"
+                dur="0.5s"
+                fill="freeze"
+                from="943 900 1210 900 971 900"
+                to="943 900 1210 900 971 688"
+            />
+        </polygon>
+    </g>
+</svg>

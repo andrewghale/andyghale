@@ -142,6 +142,15 @@ body.contact {
   display: flex;
   justify-content: space-between; }
 
+body.about {
+  background-image: url(../img/flat-mountains.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.reveal-sun {
+  opacity: 0; }
+
 .reveal-page {
   margin: 0 auto;
   padding: 1rem 2rem 0 2rem;
@@ -389,36 +398,9 @@ body.contact {
   .home #typewriter .Typewriter__cursor {
     color: #282828; }
 
-.about .holder {
-  height: fit-content;
-  width: 200px;
-  float: left; }
-  .about .holder #svg1 {
-    position: relative;
-    height: 100px;
-    width: auto; }
-    @media screen and (max-width: 500px) {
-      .about .holder #svg1 {
-        height: 60px; } }
-    .about .holder #svg1 .orange-square-grow,
-    .about .holder #svg1 .blue-square-grow,
-    .about .holder #svg1 .pink-square-grow {
-      position: absolute;
-      transform: translate(0px, 0px);
-      opacity: 0; }
-    .about .holder #svg1 .a-letter-grow,
-    .about .holder #svg1 .h-letter-grow {
-      transform-origin: center; }
-    .about .holder #svg1 .orange-square-grow {
-      animation: grow-slide 0.3s ease-in-out 1s 1 forwards; }
-    .about .holder #svg1 .blue-square-grow {
-      animation: grow-slide 0.5s ease-in-out 1s 1 forwards; }
-    .about .holder #svg1 .pink-square-grow {
-      animation: grow-slide 0.9s ease-in-out 1s 1 forwards; }
-    .about .holder #svg1 .a-letter-grow,
-    .about .holder #svg1 .h-letter-grow {
-      opacity: 0;
-      animation: grow 1s ease-in-out 1s 1 forwards; }
+.about .reveal-page {
+  margin: 0;
+  width: 50%; }
 
 .contact .reveal-page {
   max-width: 90%; }

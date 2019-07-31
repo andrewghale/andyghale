@@ -18,6 +18,17 @@ body.contact {
     justify-content: space-between;
 }
 
+body.about {
+    background-image: url(../img/flat-mountains.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reveal-sun {
+    opacity: 0;
+}
+
 .reveal-page {
     margin: 0 auto;
     padding: 1rem 2rem 0 2rem;
