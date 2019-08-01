@@ -156,9 +156,6 @@ body.contact {
   background-position: 90%;
   background-repeat: no-repeat; }
 
-.reveal-sun {
-  opacity: 0; }
-
 .reveal-page {
   margin: 0 auto;
   padding: 1rem 2rem 0 2rem;
@@ -440,6 +437,8 @@ body.contact {
 
 .contact .reveal-page {
   max-width: 90%; }
+  .contact .reveal-page .page-title:before {
+    color: white !important; }
   .contact .reveal-page .page-text.contact-info {
     display: flex;
     flex-direction: column;
@@ -452,7 +451,8 @@ body.contact {
       font-size: 2rem;
       padding: 0.5rem 0.7rem;
       border-radius: 5px;
-      background-color: #E8627B;
+      background-color: #fafafa;
+      color: #E8627B;
       margin-top: 0rem;
       animation-name: pulse-pause;
       animation-duration: 2s;
@@ -472,5 +472,8 @@ body.contact {
         .contact .reveal-page .page-text.contact-info .pink-highlight {
           margin-top: 4rem;
           font-size: 1.5rem; } }
+
+.contact .copyright {
+  color: white !important; }
 
 /*# sourceMappingURL=app.css.map */

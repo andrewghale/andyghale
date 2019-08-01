@@ -8,57 +8,67 @@
     </defs>
     <rect fill='black' width='800' height='400'/>
     <g class="circles" fill-opacity='1'>
-        <circle class="c10" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='550'>
+        <circle class="c11" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='600'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
                 fill="freeze"
                 from="0"
-                to="0.2"
+                to="1"
                 begin="1.8s"
         />
         </circle>
-        <circle class="c9" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='500'>
+        <circle class="c10" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='550'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
                 fill="freeze"
                 from="0"
-                to="0.3"
+                to="1"
+                begin="1.8s"
+        />
+        </circle>
+        <circle class="c9" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='500'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
                 begin="1.6s"
         />
         </circle>
-        <circle class="c8" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='450'>
+        <circle class="c8" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='450'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
                 fill="freeze"
                 from="0"
-                to="0.4"
+                to="1"
                 begin="1.4s"
         />
         </circle>
-        <circle class="c7" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='400'>
+        <circle class="c7" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='400'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
                 fill="freeze"
                 from="0"
-                to="0.6"
+                to="1"
                 begin="1.2s"
         />
         </circle>
-        <circle class="c6" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='350'>
+        <circle class="c6" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='350'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
                 fill="freeze"
                 from="0"
-                to="0.8"
+                to="1"
                 begin="1s"
         />
         </circle>
-        <circle class="c5" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='300'>
+        <circle class="c5" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='300'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
@@ -68,7 +78,7 @@
                 begin="0.8s"
         />
         </circle>
-        <circle class="c4" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='250'>
+        <circle class="c4" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='250'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
@@ -78,7 +88,7 @@
                 begin="0.6s"
         />
         </circle>
-        <circle class="c3" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='200'>
+        <circle class="c3" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='200'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
@@ -88,7 +98,7 @@
                 begin="0.4s"
         />
         </circle>
-        <circle class="c2" fill='url(#b)' fill-opacity="0" cx='267.5' cy='200' r='150'>
+        <circle class="c2" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='150'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
@@ -98,7 +108,17 @@
                 begin="0.2s"
         />
         </circle>
-        <circle class="c1" fill='url(#b)' cx='267.5' cy='200' r='100'>
+        <circle class="c1" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='100'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.1s"
+            />
+        </circle>
+        <circle class="c0" fill='#ED9E3B' cx='267.5' cy='200' r='50'>
             <animate
                 attributeName="fill-opacity"
                 dur="0.5s"
