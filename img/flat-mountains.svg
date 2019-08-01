@@ -104,7 +104,7 @@
             dur="1.5s"
             fill="freeze"
             from="0"
-            to="1"
+            to="0.3"
             begin="5.5s"
         />
         <polygon fill='#cc0000' points='957 900 539 900 1396 900'>
@@ -164,7 +164,7 @@
             dur="1.5s"
             fill="freeze"
             from="0"
-            to="1"
+            to="0.6"
             begin="5.5s"
         />
         <polygon fill='#d9004b' points='1203 900 1552 900 876 900'>

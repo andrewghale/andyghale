@@ -1,9 +1,23 @@
 .about {
     .reveal-page {
         margin: 0;
-        width: 50%;
+        width: 70%;
+        @media screen and (max-width: $bp-tablet) {
+            width: 90%;
+        }
+    }
+    .page-text {
+        .text {
+            @media screen and (max-width: $bp-tablet) {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
+
+
+
+
 // .holder {
 //     height:fit-content;
 //     width: 200px;
