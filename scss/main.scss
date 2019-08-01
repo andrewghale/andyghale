@@ -19,12 +19,21 @@ body.contact {
 }
 
 body.about {
-    background-image: url(../img/flat-mountains.svg);
+    background-image: url(../img/mountains.svg);
     /* background by SVGBackgrounds.com */
     background-size: cover;
     background-position: 90%;
     background-repeat: no-repeat;
 }
+body.contact {
+    background-image: url(../img/contact-bg.svg);
+    /* background by SVGBackgrounds.com */
+    background-size: cover;
+    background-position: 90%;
+    background-repeat: no-repeat;
+}
+
+
 
 .reveal-sun {
     opacity: 0;
@@ -102,6 +111,7 @@ body.about {
     }
 }
 
-// .sprite {
-//     background-color: cadetblue;
-// }
+ #no-link {
+    background: none;
+    cursor: pointer;
+ }

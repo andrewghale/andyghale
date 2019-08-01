@@ -5,18 +5,26 @@
         @media screen and (max-width: $bp-tablet) {
             width: 90%;
         }
-    }
-    .page-text {
-        .text {
-            @media screen and (max-width: $bp-tablet) {
-                font-size: 1.2rem;
+        .page-title {
+            &:before {
+                background: $blue;
+            }
+        }
+        .page-text {
+            .text {
+                @media screen and (max-width: $bp-tablet) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
+    .footer {
+        .copyright {
+            margin-left: auto;
+            color: $white;
+        }
+    }
 }
-
-
-
 
 // .holder {
 //     height:fit-content;

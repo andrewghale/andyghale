@@ -104,27 +104,27 @@
             dur="1.5s"
             fill="freeze"
             from="0"
-            to="0.3"
+            to="0.6"
             begin="5.5s"
         />
         <polygon fill='#cc0000' points='957 900 539 900 1396 900'>
             <animate
                 attributeName="points"
-                dur="0.7s"
+                dur="0.3s"
                 fill="freeze"
                 from="957 900 539 900 1396 900"
                 to="957 450 539 900 1396 900"
-                begin="2.3s"
+                begin="3.5s"
             />
         </polygon>
         <polygon fill='#aa0000' points='957 900 872.9 900 1396 900'>
             <animate
                 attributeName="points"
-                dur="0.7s"
+                dur="0.3s"
                 fill="freeze"
                 from="957 900 872.9 900 1396 900"
                 to="957 451 872.9 900 1396 900"
-                begin="2.3s"
+                begin="3.5s"
             />
         </polygon>
     </g>
@@ -140,21 +140,21 @@
         <polygon fill='#d6002b' points='-60 900 398 900 816 900'>
             <animate
                 attributeName="points"
-                dur="0.3s"
+                dur="0.15s"
                 fill="freeze"
                 from="-60,900, 398,900, 816,900"
                 to="-60,900, 398,662, 816,900"
-                begin="3s"
+                begin="3.3s"
             />
         </polygon>
         <polygon fill='#b10022' points='337 900 398 900 816 900'>
             <animate
                 attributeName="points"
-                dur="0.3s"
+                dur="0.15s"
                 fill="freeze"
                 from="337 900 398 900 816 900"
                 to="337 900 398 663 816 900"
-                begin="3s"
+                begin="3.3s"
             />
         </polygon>
     </g>
@@ -170,21 +170,21 @@
         <polygon fill='#d9004b' points='1203 900 1552 900 876 900'>
             <animate
                 attributeName="points"
-                dur="0.4s"
+                dur="0.2s"
                 fill="freeze"
                 from="1203 900 1552 900 876 900"
                 to="1203 546 1552 900 876 900"
-                begin="2.5s"
+                begin="2.4s"
             />
         </polygon>
         <polygon fill='#b2003d' points='1203 900 1552 900 1162 900'>
             <animate
                 attributeName="points"
-                dur="0.4s"
+                dur="0.2s"
                 fill="freeze"
                 from="1203 900 1552 900 1162 900"
                 to="1203 547 1552 900 1162 900"
-                begin="2.5s"
+                begin="2.4s"
             />
         </polygon>
     </g>
@@ -200,21 +200,21 @@
         <polygon fill='#d3006c' points='641 900 886 900 367 900'>
             <animate
                 attributeName="points"
-                dur="0.5s"
+                dur="0.2s"
                 fill="freeze"
                 from="641 900 886 900 367 900"
                 to="641 695 886 900 367 900"
-                begin="2.7s"
+                begin="2.9s"
             />
         </polygon>
         <polygon fill='#ac0057' points='587 900 641 900 886 900'>
             <animate
                 attributeName="points"
-                dur="0.5s"
+                dur="0.2s"
                 fill="freeze"
                 from="587 900 641 900 886 900"
                 to="587 900 641 696 886 900"
-                begin="2.7s"
+                begin="2.9s"
             />
         </polygon>
     </g>
@@ -234,7 +234,7 @@
                 fill="freeze"
                 from="1710 900 1401 900 1096 900"
                 to="1710 900 1401 632 1096 900"
-                begin="2.3s"
+                begin="2s"
             />
         </polygon>
         <polygon fill='#9e0071' points='1710 900 1401 900 1365 900'>
@@ -244,7 +244,7 @@
                 fill="freeze"
                 from="1710 900 1401 900 1365 900"
                 to="1710 900 1401 632 1365 900"
-                begin="2.3s"
+                begin="2s"
             />
         </polygon>
     </g>

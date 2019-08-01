@@ -143,7 +143,14 @@ body.contact {
   justify-content: space-between; }
 
 body.about {
-  background-image: url(../img/flat-mountains.svg);
+  background-image: url(../img/mountains.svg);
+  /* background by SVGBackgrounds.com */
+  background-size: cover;
+  background-position: 90%;
+  background-repeat: no-repeat; }
+
+body.contact {
+  background-image: url(../img/contact-bg.svg);
   /* background by SVGBackgrounds.com */
   background-size: cover;
   background-position: 90%;
@@ -217,6 +224,10 @@ body.about {
           font-size: 0.9rem;
           letter-spacing: 0.07rem;
           line-height: 1.5rem; } }
+
+#no-link {
+  background: none;
+  cursor: pointer; }
 
 .site-header {
   display: flex;
@@ -405,10 +416,15 @@ body.about {
   @media screen and (max-width: 770px) {
     .about .reveal-page {
       width: 90%; } }
+  .about .reveal-page .page-title:before {
+    background: #82CACB; }
+  @media screen and (max-width: 770px) {
+    .about .reveal-page .page-text .text {
+      font-size: 1.2rem; } }
 
-@media screen and (max-width: 770px) {
-  .about .page-text .text {
-    font-size: 1.2rem; } }
+.about .footer .copyright {
+  margin-left: auto;
+  color: #fafafa; }
 
 .contact .reveal-page {
   max-width: 90%; }
