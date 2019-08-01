@@ -115,3 +115,17 @@ body.contact {
     background: none;
     cursor: pointer;
  }
+
+ #map {
+    height: 325px;
+    width: 80vw;
+    border-radius: $border-radius;
+    margin: 2rem auto 0rem auto;
+    @media screen and (max-width: $bp-tablet) {
+        height: 225px;
+    }
+}
+
+.reveal-map {
+    opacity: 0;
+}

@@ -229,6 +229,18 @@ body.contact {
   background: none;
   cursor: pointer; }
 
+#map {
+  height: 325px;
+  width: 80vw;
+  border-radius: 5px;
+  margin: 2rem auto 0rem auto; }
+  @media screen and (max-width: 770px) {
+    #map {
+      height: 225px; } }
+
+.reveal-map {
+  opacity: 0; }
+
 .site-header {
   display: flex;
   width: 100%;
@@ -460,13 +472,5 @@ body.contact {
         .contact .reveal-page .page-text.contact-info .pink-highlight {
           margin-top: 4rem;
           font-size: 1.5rem; } }
-    .contact .reveal-page .page-text.contact-info #map {
-      height: 325px;
-      width: 80vw;
-      border-radius: 5px;
-      margin: 2rem auto 0rem auto; }
-      @media screen and (max-width: 770px) {
-        .contact .reveal-page .page-text.contact-info #map {
-          height: 225px; } }
 
 /*# sourceMappingURL=app.css.map */

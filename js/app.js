@@ -10589,6 +10589,7 @@ return jQuery;
 } );
 $(document).ready(function () {
     $(".reveal-page").delay(100).animate({ opacity: 1 }, 500);
+    $(".reveal-map").delay(1000).animate({ opacity: 1 }, 800);
     // $(".reveal-sun").delay(500).animate({ opacity: 1 }, 1000);
     $('#main-title').animate({ opacity: "1" }, 500);
     $('#about-title').animate({ left: 0, opacity: "1" }, 500);
