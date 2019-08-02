@@ -1,4 +1,4 @@
-body.bg-zoom {
+body.home-bg {
     /* background by SVGBackgrounds.com */
     background-image: url('../img/endless-constellation.svg');
     background-attachment: fixed;
@@ -16,21 +16,19 @@ body.about,
 body.contact {
     display: flex;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90%;
+    background-blend-mode: screen;
 }
 
 body.about {
     background-image: url(../img/mountains.svg);
     /* background by SVGBackgrounds.com */
-    background-size: cover;
-    background-position: 90%;
-    background-repeat: no-repeat;
 }
 body.contact {
     background-image: url(../img/contact-bg.svg);
     /* background by SVGBackgrounds.com */
-    background-size: cover;
-    background-position: 90%;
-    background-repeat: no-repeat;
 }
 
 .reveal-page {
@@ -60,7 +58,6 @@ body.contact {
             position: absolute;
             bottom: 0;
             height: 0.3rem;
-            background: $pink;
             opacity: 0;
             left: -10px;
             right: 10px;
@@ -88,7 +85,6 @@ body.contact {
         display: flex;
         flex-direction: column;
         padding-left: 0rem;
-        // padding-right: 2rem;
         margin-right: auto;
         .text {
             letter-spacing: 0.12rem;
@@ -107,8 +103,9 @@ body.contact {
 
  #no-link {
     background: none;
+    color: $white;
     cursor: pointer;
- }
+}
 
  #map {
     height: 325px;

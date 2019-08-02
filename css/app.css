@@ -124,7 +124,7 @@ a {
   color: inherit;
   text-decoration: none; }
 
-body.bg-zoom {
+body.home-bg {
   /* background by SVGBackgrounds.com */
   background-image: url("../img/endless-constellation.svg");
   background-attachment: fixed;
@@ -133,28 +133,26 @@ body.bg-zoom {
   transition: all .7s;
   animation: bg-zoom 25s ease-in-out 0s infinite alternate forwards running; }
   @media screen and (max-width: 770px) {
-    body.bg-zoom {
+    body.home-bg {
       animation: none;
       background-size: 40%; } }
 
 body.about,
 body.contact {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90%;
+  background-blend-mode: screen; }
 
 body.about {
   background-image: url(../img/mountains.svg);
-  /* background by SVGBackgrounds.com */
-  background-size: cover;
-  background-position: 90%;
-  background-repeat: no-repeat; }
+  /* background by SVGBackgrounds.com */ }
 
 body.contact {
   background-image: url(../img/contact-bg.svg);
-  /* background by SVGBackgrounds.com */
-  background-size: cover;
-  background-position: 90%;
-  background-repeat: no-repeat; }
+  /* background by SVGBackgrounds.com */ }
 
 .reveal-page {
   margin: 0 auto;
@@ -183,7 +181,6 @@ body.contact {
       position: absolute;
       bottom: 0;
       height: 0.3rem;
-      background: #E8627B;
       opacity: 0;
       left: -10px;
       right: 10px;
@@ -224,6 +221,7 @@ body.contact {
 
 #no-link {
   background: none;
+  color: #fafafa;
   cursor: pointer; }
 
 #map {
@@ -270,33 +268,19 @@ body.contact {
     padding-top: 1rem;
     max-height: 100px; }
     .site-header .main-nav .tag {
-      background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
       margin: 0 2rem;
       padding: 1rem;
       font-size: 1.5rem;
       font-weight: bold;
+      text-decoration: none;
+      transition: background-size .07s ease-in-out;
+      background: linear-gradient(to bottom, #fafafa 0%, #fafafa 100%);
       background-position: 0 50%;
       background-repeat: repeat-x;
-      background-size: 0px 0px;
-      text-decoration: none;
-      transition: background-size .07s ease-in-out; }
-      @media screen and (max-width: 770px) {
-        .site-header .main-nav .tag {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-          margin: 0 0.3rem;
-          font-size: 1.2rem;
-          transition: background-size .7s ease-in-out; } }
-      @media screen and (max-width: 500px) {
-        .site-header .main-nav .tag {
-          align-self: flex-end;
-          font-size: 0.9rem; } }
+      background-size: 0px 0px; }
       .site-header .main-nav .tag:hover {
         background-size: 1px 40px;
-        color: #282828;
         transition: background-size 0.07s ease-in-out; }
-        @media screen and (max-width: 770px) {
-          .site-header .main-nav .tag:hover {
-            color: #fafafa; } }
 
 .orange-square {
   stroke-dashoffset: 0;
@@ -359,6 +343,19 @@ body.contact {
       .footer .copyright {
         align-self: flex-end; } }
 
+.home .tag {
+  background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px; }
+  .home .tag:hover {
+    background-size: 1px 40px;
+    color: #282828;
+    transition: background-size 0.07s ease-in-out; }
+    @media screen and (max-width: 770px) {
+      .home .tag:hover {
+        color: #fafafa; } }
+
 .home .main-title {
   margin-top: 8rem;
   margin-bottom: 0;
@@ -419,6 +416,12 @@ body.contact {
   .home #typewriter .Typewriter__cursor {
     color: #282828; }
 
+.about .tag:hover {
+  color: #282828; }
+  @media screen and (max-width: 770px) {
+    .about .tag:hover {
+      color: #fafafa; } }
+
 .about .reveal-page {
   margin: 0;
   width: 70%; }
@@ -426,7 +429,7 @@ body.contact {
     .about .reveal-page {
       width: 90%; } }
   .about .reveal-page .page-title:before {
-    background: #82CACB; }
+    background: #fafafa; }
   @media screen and (max-width: 770px) {
     .about .reveal-page .page-text .text {
       font-size: 1.2rem; } }
@@ -435,10 +438,29 @@ body.contact {
   margin-left: auto;
   color: #fafafa; }
 
+.contact .site-header .main-nav .tag:hover {
+  color: #E8627B; }
+  @media screen and (max-width: 770px) {
+    .contact .site-header .main-nav .tag:hover {
+      color: #fafafa;
+      background: none; } }
+
 .contact .reveal-page {
   max-width: 90%; }
   .contact .reveal-page .page-title:before {
-    color: white !important; }
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.3rem;
+    background: #fafafa;
+    opacity: 0;
+    left: -10px;
+    right: 10px;
+    animation: underline-slide 1s ease-in-out 0.5s 1 forwards; }
+    @media screen and (max-width: 770px) {
+      .contact .reveal-page .page-title:before {
+        margin-left: 0rem;
+        height: 0.3rem; } }
   .contact .reveal-page .page-text.contact-info {
     display: flex;
     flex-direction: column;

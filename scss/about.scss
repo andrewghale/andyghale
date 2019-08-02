@@ -1,4 +1,12 @@
 .about {
+    .tag {
+        &:hover {
+            color: $black;
+            @media screen and (max-width: $bp-tablet) {
+                color: $white;
+            }
+        }
+    }
     .reveal-page {
         margin: 0;
         width: 70%;
@@ -7,7 +15,7 @@
         }
         .page-title {
             &:before {
-                background: $blue;
+                background: $white;
             }
         }
         .page-text {
