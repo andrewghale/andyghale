@@ -71,160 +71,165 @@
         <p class="copyright">© 2019 Andrew Hale</p>
     </footer>
     <script>
-        // Initializes and adds the map
+
+        // function initMap() {
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //     zoom: 4,
+        //     center: {lat: -33, lng: 151}
+        // });
+
+        // var image = 'img/polygon.png';
+        // var beachMarker = new google.maps.Marker({
+        //     position: {lat: -33.890, lng: 151.274},
+        //     map: map,
+        //     icon: image
+        // });
+        // }
+
+
         function initMap() {
-            var locations = [
-            // The location of Bristol
-            ['Bristol', 51.453840, -2.597138, 1],
-            // The location of Alderley Edge
-            ['Alderley Edge', 53.300552, -2.236308, 2]
-            ];
+            var Bristol = {lat: 51.449851, lng: -2.597341};
+
             var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 6,
-            center: new google.maps.LatLng(52.300556, -2.236306),
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [
-                {
-                    "featureType": "administrative",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": "-100"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative.province",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "lightness": 65
-                        },
-                        {
-                            "visibility": "on"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "lightness": "50"
-                        },
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": "-100"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "lightness": "30"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "lightness": "40"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "saturation": -100
-                        },
-                        {
-                            "visibility": "simplified"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "hue": "#ffff00"
-                        },
-                        {
-                            "lightness": -25
-                        },
-                        {
-                            "saturation": -97
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "labels",
-                    "stylers": [
-                        {
-                            "lightness": -25
-                        },
-                        {
-                            "saturation": -100
-                        }
-                    ]
-                }
-            ]
+                zoom: 11,
+                center: Bristol,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [
+                    {
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": "-100"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.province",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 65
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": "50"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": "-100"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "lightness": "30"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "lightness": "40"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "hue": "#ffff00"
+                            },
+                            {
+                                "lightness": -25
+                            },
+                            {
+                                "saturation": -97
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "lightness": -25
+                            },
+                            {
+                                "saturation": -100
+                            }
+                        ]
+                    }
+                ]
             });
-            var infowindow = new google.maps.InfoWindow();
-            var marker, i;
-            for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map
+
+            var image = 'img/polygon.png';
+            var marker = new google.maps.Marker({
+                position: Bristol,
+                map: map,
+                title: 'bristol_location',
+                icon: image
             });
-            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                infowindow.setContent(locations[i][0]);
-                infowindow.open(map, marker);
-            }
-            })(marker, i));
-            }
         }
-        </script>
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_hBW136GdqB4oxn7VcdyHUQ_tSAHXibE&callback=initMap"
     async defer>
     </script>

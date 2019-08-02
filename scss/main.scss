@@ -33,8 +33,9 @@
 }
 .contact {
     background-image: url(../img/contact-bg.svg);
-    /* background by SVGBackgrounds.com */
-    /* Animations by myself, Andrew Hale */
+    @media screen and (max-width: $bp-tablet) {
+        background-position-x: 40%;
+    }
 }
 
 .reveal-page {
