@@ -123,3 +123,12 @@ $title-glow: 0px 0px 10px $transp-white;
         background-position-x: 0%;
     }
 }
+
+@keyframes background-slide {
+    0% {
+        background-position-x: 40%;
+    }
+    100% {
+        background-position-x: 90%;
+    }
+}

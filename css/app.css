@@ -56,6 +56,12 @@
     background-position-y: 0%;
     background-position-x: 0%; } }
 
+@keyframes background-slide {
+  0% {
+    background-position-x: 40%; }
+  100% {
+    background-position-x: 90%; } }
+
 * {
   box-sizing: border-box; }
 
@@ -95,7 +101,7 @@ a {
   background-image: url("../img/endless-constellation.svg");
   background-attachment: fixed;
   background-size: 17%;
-  background-position: 0%;
+  background-position-x: 0%;
   transition: all .7s;
   animation: bg-zoom 25s ease-in-out 0s infinite alternate forwards running; }
   @media screen and (max-width: 770px) {
@@ -109,13 +115,17 @@ a {
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 90%;
+  background-position-x: 90%;
   background-blend-mode: screen; }
 
 .about {
   background-image: url(../img/mountains.svg);
   /* background by SVGBackgrounds.com */
   /* Animations by myself, Andrew Hale */ }
+  @media screen and (max-width: 770px) {
+    .about {
+      background-position-x: 40%;
+      animation: background-slide 3s ease-in-out 0.7s 1 forwards; } }
 
 .contact {
   background-image: url(../img/contact-bg.svg);
@@ -245,6 +255,9 @@ a {
     align-items: center;
     padding-top: 1rem;
     max-height: 100px; }
+    @media screen and (max-width: 500px) {
+      .site-header .main-nav {
+        padding-top: 0; } }
     .site-header .main-nav .tag {
       margin: 0 2rem;
       padding: 1rem;
@@ -258,7 +271,14 @@ a {
       background-size: 0px 0px; }
       @media screen and (max-width: 770px) {
         .site-header .main-nav .tag {
-          background: none; } }
+          background: none;
+          padding: 0.4rem;
+          margin: 0 1rem;
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 500px) {
+        .site-header .main-nav .tag {
+          padding: 0.4rem;
+          margin: 0 0.3rem; } }
       .site-header .main-nav .tag:hover {
         background-size: 1px 40px;
         transition: background-size 0.07s ease-in-out; }

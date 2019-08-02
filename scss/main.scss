@@ -3,7 +3,7 @@
     background-image: url('../img/endless-constellation.svg');
     background-attachment: fixed;
     background-size: 17%;
-    background-position: 0%;
+    background-position-x: 0%;
     transition: all .7s;
     animation: bg-zoom 25s ease-in-out 0s infinite alternate forwards running;
     @media screen and (max-width: $bp-tablet) {
@@ -18,7 +18,7 @@
     justify-content: space-between;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 90%;
+    background-position-x: 90%;
     background-blend-mode: screen;
 }
 
@@ -26,6 +26,10 @@
     background-image: url(../img/mountains.svg);
     /* background by SVGBackgrounds.com */
     /* Animations by myself, Andrew Hale */
+    @media screen and (max-width: $bp-tablet) {
+        background-position-x: 40%;
+        animation: background-slide 3s ease-in-out 0.7s 1 forwards;
+    }
 }
 .contact {
     background-image: url(../img/contact-bg.svg);

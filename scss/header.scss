@@ -44,6 +44,9 @@
         align-items: center;
         padding-top: 1rem;
         max-height: 100px;
+        @media screen and (max-width: $bp-phone) {
+            padding-top: 0;
+        }
         .tag {
             margin: 0 2rem;
             padding: 1rem;
@@ -57,6 +60,13 @@
             background-size: 0px 0px;
             @media screen and (max-width: $bp-tablet) {
                 background: none;
+                padding: 0.4rem;
+                margin: 0 1rem;
+                font-size: 1.3rem;
+            }
+            @media screen and (max-width: $bp-phone) {
+                padding: 0.4rem;
+                margin: 0 0.3rem;
             }
             &:hover {
                 background-size: 1px 40px;
