@@ -121,7 +121,7 @@ p {
   font-size: 1.7rem; }
 
 a {
-  color: inherit;
+  color: #fafafa;
   text-decoration: none; }
 
 body.home-bg {
@@ -260,6 +260,16 @@ body.contact {
       .site-header .logo-holder .home-logo:hover {
         animation-name: pulse;
         animation-duration: 500ms; }
+      .site-header .logo-holder .home-logo .orange-square {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1400;
+        animation: draw 4s ease-in-out 2s 1;
+        fill-opacity: 0; }
+      .site-header .logo-holder .home-logo .pink-square {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1400;
+        animation: draw 5s ease-in-out 1s 1;
+        fill-opacity: 0; }
   .site-header .main-nav {
     display: flex;
     flex: 1;
@@ -278,21 +288,12 @@ body.contact {
       background-position: 0 50%;
       background-repeat: repeat-x;
       background-size: 0px 0px; }
+      @media screen and (max-width: 770px) {
+        .site-header .main-nav .tag {
+          background: none; } }
       .site-header .main-nav .tag:hover {
         background-size: 1px 40px;
         transition: background-size 0.07s ease-in-out; }
-
-.orange-square {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 1400;
-  animation: draw 4s ease-in-out 2s 1;
-  fill-opacity: 0; }
-
-.pink-square {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 1400;
-  animation: draw 5s ease-in-out 1s 1;
-  fill-opacity: 0; }
 
 .footer {
   display: flex;
@@ -344,12 +345,8 @@ body.contact {
         align-self: flex-end; } }
 
 .home .tag {
-  background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
-  background-position: 0 50%;
-  background-repeat: repeat-x;
-  background-size: 0px 0px; }
+  background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%); }
   .home .tag:hover {
-    background-size: 1px 40px;
     color: #282828;
     transition: background-size 0.07s ease-in-out; }
     @media screen and (max-width: 770px) {
@@ -372,13 +369,13 @@ body.contact {
       letter-spacing: 0;
       font-size: 4rem; } }
   .home .main-title:before {
-    content: '';
+    background: #E8627B;
+    content: "";
     display: block;
     position: absolute;
     bottom: 0px;
     height: 8px;
     width: -webkit-fill-available;
-    background: #E8627B;
     left: 0px;
     right: 0px;
     z-index: -1;
@@ -438,36 +435,24 @@ body.contact {
   margin-left: auto;
   color: #fafafa; }
 
-.contact .site-header .main-nav .tag:hover {
+.contact .tag:hover {
   color: #E8627B; }
   @media screen and (max-width: 770px) {
-    .contact .site-header .main-nav .tag:hover {
+    .contact .tag:hover {
       color: #fafafa;
       background: none; } }
 
 .contact .reveal-page {
   max-width: 90%; }
   .contact .reveal-page .page-title:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 0.3rem;
-    background: #fafafa;
-    opacity: 0;
-    left: -10px;
-    right: 10px;
-    animation: underline-slide 1s ease-in-out 0.5s 1 forwards; }
-    @media screen and (max-width: 770px) {
-      .contact .reveal-page .page-title:before {
-        margin-left: 0rem;
-        height: 0.3rem; } }
+    background: #fafafa; }
   .contact .reveal-page .page-text.contact-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     margin-right: 0; }
-    .contact .reveal-page .page-text.contact-info .pink-highlight {
+    .contact .reveal-page .page-text.contact-info .white-highlight {
       height: fit-content;
       align-self: center;
       font-size: 2rem;
@@ -484,18 +469,18 @@ body.contact {
       animation-direction: normal;
       animation-fill-mode: forwards;
       animation-play-state: running; }
-      .contact .reveal-page .page-text.contact-info .pink-highlight:hover {
+      .contact .reveal-page .page-text.contact-info .white-highlight:hover {
         cursor: pointer;
         animation: none; }
       @media screen and (max-width: 770px) {
-        .contact .reveal-page .page-text.contact-info .pink-highlight {
+        .contact .reveal-page .page-text.contact-info .white-highlight {
           font-size: 2rem; } }
       @media screen and (max-width: 500px) {
-        .contact .reveal-page .page-text.contact-info .pink-highlight {
+        .contact .reveal-page .page-text.contact-info .white-highlight {
           margin-top: 4rem;
           font-size: 1.5rem; } }
 
 .contact .copyright {
-  color: white !important; }
+  color: #fafafa; }
 
 /*# sourceMappingURL=app.css.map */

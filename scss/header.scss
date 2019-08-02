@@ -23,6 +23,18 @@
                 animation-name: pulse;
                 animation-duration: 500ms;
             }
+            .orange-square {
+                stroke-dashoffset:0;
+                stroke-dasharray:1400;
+                animation: draw 4s ease-in-out 2s 1;
+                fill-opacity: 0;
+            }
+            .pink-square {
+                stroke-dashoffset:0;
+                stroke-dasharray:1400;
+                animation: draw 5s ease-in-out 1s 1;
+                fill-opacity: 0;
+            }
         }
     }
     .main-nav {
@@ -43,24 +55,13 @@
             background-position: 0 50%;
             background-repeat: repeat-x;
             background-size: 0px 0px;
+            @media screen and (max-width: $bp-tablet) {
+                background: none;
+            }
             &:hover {
                 background-size: 1px 40px;
                 transition: background-size 0.07s ease-in-out;
             }
         }
     }
-}
-
-.orange-square {
-    stroke-dashoffset:0;
-	stroke-dasharray:1400;
-    animation: draw 4s ease-in-out 2s 1;
-	fill-opacity: 0;
-}
-
-.pink-square {
-    stroke-dashoffset:0;
-	stroke-dasharray:1400;
-    animation: draw 5s ease-in-out 1s 1;
-	fill-opacity: 0;
 }
