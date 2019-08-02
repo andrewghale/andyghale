@@ -12,18 +12,12 @@
     }
     .social-link {
         margin: 0rem 1rem;
-        transform: translateY(0px);
-        transition: transform 0.3s;
+        transition: transform 0.2s;
         @media screen and (max-width: $bp-tablet) {
             transition: none;
         }
         &:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s;
-            @media screen and (max-width: $bp-tablet) {
-                transform: translateY(0px);
-                transition: none;
-            }
+            @include hover-rise;
         }
         a {
             img {

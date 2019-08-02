@@ -1,4 +1,4 @@
-body.home-bg {
+.home {
     /* background by SVGBackgrounds.com */
     background-image: url('../img/endless-constellation.svg');
     background-attachment: fixed;
@@ -12,8 +12,8 @@ body.home-bg {
     }
 }
 
-body.about,
-body.contact {
+.about,
+.contact {
     display: flex;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -22,13 +22,15 @@ body.contact {
     background-blend-mode: screen;
 }
 
-body.about {
+.about {
     background-image: url(../img/mountains.svg);
     /* background by SVGBackgrounds.com */
+    /* Animations by myself, Andrew Hale */
 }
-body.contact {
+.contact {
     background-image: url(../img/contact-bg.svg);
     /* background by SVGBackgrounds.com */
+    /* Animations by myself, Andrew Hale */
 }
 
 .reveal-page {

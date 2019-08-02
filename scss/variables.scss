@@ -1,23 +1,30 @@
+// Colors
 $orange: #ED9E3B;
 $blue: #82CACB;
 $pink: #E8627B;
+
 $black: #282828;
 $white: #fafafa;
 
 $transp-white: rgba(255, 255, 255, 0.3);
-
 $body-color: #ededed;
 
 $transparent: rgba(0, 0, 0, 0);
-$copyright-color: rgb(170, 170, 170);
+$copyright-color: $white;
 
+// Breakpoints
 $bp-tablet: 770px;
 $bp-phone: 500px;
 $bp-xs: 415px;
 
-$border-radius: 5px;
+// Borders
+$border-radius: 3px;
+
+// Miscellaneous
 $title-glow: 0px 0px 10px $transp-white;
 
+// Animations
+//Underline fades in and slides in from the left
 @keyframes underline-slide {
     0% {
         opacity: 0;
@@ -30,15 +37,8 @@ $title-glow: 0px 0px 10px $transp-white;
         right: 0px;
     }
 }
-@keyframes underline-fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
+// Element pulses
 @keyframes pulse {
     /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
     from {
@@ -52,6 +52,7 @@ $title-glow: 0px 0px 10px $transp-white;
     }
 }
 
+// Element pulses with longer pause
 @keyframes pulse-pause {
     0% {
       transform: scale3d(1, 1, 1);
@@ -67,6 +68,7 @@ $title-glow: 0px 0px 10px $transp-white;
     }
 }
 
+// For homepage logo animation
 @keyframes draw {
     0% {
         stroke-dashoffset:0;
@@ -82,45 +84,22 @@ $title-glow: 0px 0px 10px $transp-white;
     };
 }
 
-@keyframes grow-slide {
-    0% {
-        opacity: 0;
-        transform: translate(0px, 0px);
-    }
-    1% {
-        opacity: 0
-    }
-    49% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.25;
-        transform: translate(-10px, 0px)
-    }
-    75% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0px, 0px);
-    }
-}
+// @keyframes grow {
+//     0% {
+//         opacity: 0;
+//         transform: scale(1.6);
+//     }
+//     80% {
+//         opacity: 0;
+//         transform: scale(1.6);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
 
-@keyframes grow {
-    0% {
-        opacity: 0;
-        transform: scale(1.6);
-    }
-    80% {
-        opacity: 0;
-        transform: scale(1.6);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
+// For homepage background
 @keyframes bg-zoom {
     0% {
         background-size: 17%;
@@ -144,9 +123,3 @@ $title-glow: 0px 0px 10px $transp-white;
         background-position-x: 0%;
     }
 }
-
-// .circles {
-//     .c1 {
-//         display: none;
-//     }
-// }

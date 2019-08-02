@@ -16,39 +16,12 @@
             }
         }
         .page-text.contact-info {
-            display: flex;
-            flex-direction: column;
             justify-content: space-evenly;
             width: 100%;
             margin-right: 0;
             .white-highlight {
-                height: fit-content;
-                align-self: center;
-                font-size: 2rem;
-                padding: 0.5rem 0.7rem;
-                border-radius: $border-radius;
-                background-color: $white;
-                color: $pink;
-                margin-top: 0rem;
-                animation-name: pulse-pause;
-                animation-duration: 2s;
-                animation-timing-function: ease-in-out;
-                animation-delay: 0s;
-                animation-iteration-count: infinite;
-                animation-direction: normal;
-                animation-fill-mode: forwards;
-                animation-play-state: running;
-                &:hover {
-                    cursor: pointer;
-                    animation: none;
-                }
-                @media screen and (max-width: $bp-tablet) {
-                    font-size: 2rem;
-                }
-                @media screen and (max-width: $bp-phone) {
-                    margin-top: 4rem;
-                    font-size: 1.5rem;
-                }
+                @include white-highlight;
+                animation: pulse-pause 2s ease-in-out 0s infinite forwards;
             }
         }
     }
