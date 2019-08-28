@@ -10627,16 +10627,35 @@ if ($(".home").length > 0) {
         .deleteAll(40);
 }
 
+let logoRise = document.getElementById("home-logo");
+const animateRise = (scale, duration, elasticity) => {
+    anime.remove(logoRise); // not sure what this does //
+    anime({
+        targets: logoRise,
+        scale: scale,
+        duration: duration,
+        elasticity: elasticity
+    });
+}
+const enterButton = () => { animateRise(1.07, 800, 400) };
+const leaveButton = () => { animateRise(1.0, 600, 300) };
+logoRise.addEventListener('mouseenter', enterButton, false);
+logoRise.addEventListener('mouseleave', leaveButton, false);
+
+
+// homepage social icons slide in
+if ($(".home").length > 0 ) {
     anime({
         targets: '.social-link',
         translateX: 500,
-        delay: anime.stagger(200),
+        delay: anime.stagger(300),
         easing: 'spring(2, 95, 50, 0)'
     });
+}
 
-if ($(".home, .contact").length > 0) {
+// git logo rises on hover
+if ($(".home, .about, .contact").length > 0) {
     let hoverRise = document.getElementById("hover-rise");
-
     const animateRise = (scale, duration, elasticity) => {
     anime.remove(hoverRise); // not sure what this does //
     anime({
@@ -10646,10 +10665,8 @@ if ($(".home, .contact").length > 0) {
         elasticity: elasticity
     });
     }
-
     const enterButton = () => { animateRise(1.07, 800, 400) };
     const leaveButton = () => { animateRise(1.0, 600, 300) };
-
     hoverRise.addEventListener('mouseenter', enterButton, false);
     hoverRise.addEventListener('mouseleave', leaveButton, false);
 }

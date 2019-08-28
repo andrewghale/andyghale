@@ -8,15 +8,6 @@
     left: 0px;
     right: 0px; } }
 
-@keyframes pulse {
-  /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-  from {
-    transform: scale3d(1, 1, 1); }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05); }
-  to {
-    transform: scale3d(1, 1, 1); } }
-
 @keyframes pulse-pause {
   0% {
     transform: scale3d(1, 1, 1); }
@@ -300,16 +291,6 @@ a {
         @media screen and (max-width: 500px) {
           .footer .social-links .social-link a img {
             margin: 0.5rem 0; } }
-  .footer .git,
-  .footer .insta,
-  .footer .linkedin {
-    position: absolute; }
-  .footer .git {
-    left: -500px; }
-  .footer .insta {
-    left: -420px; }
-  .footer .linkedin {
-    left: -340px; }
   .footer .copyright {
     margin-right: 1.5rem;
     align-self: center;
@@ -392,6 +373,18 @@ a {
     color: #282828; }
   .home #typewriter .Typewriter__cursor {
     color: #282828; }
+
+.home .footer .git, .home .footer .insta, .home .footer .linkedin {
+  position: absolute; }
+
+.home .footer .git {
+  left: -500px; }
+
+.home .footer .insta {
+  left: -420px; }
+
+.home .footer .linkedin {
+  left: -340px; }
 
 .about .tag:hover {
   color: #282828; }

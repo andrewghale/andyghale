@@ -72,4 +72,18 @@
             color: $black;
         }
     }
+    .footer {
+        .git, .insta, .linkedin {
+            position: absolute;
+        }
+        .git {
+            left: -500px;
+        }
+        .insta {
+            left: -420px;
+        }
+        .linkedin {
+            left: -340px;
+        }
+    }
 }
