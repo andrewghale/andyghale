@@ -4,36 +4,55 @@ $(document).ready(function () {
 });
 
 // TypewriterJS
-const typewriter = new Typewriter('#typewriter', {
-    autoStart: true,
-    loop: true,
-});
+if ($(".home").length > 0) {
+    const typewriter = new Typewriter('#typewriter', {
+        autoStart: true,
+        loop: true,
+    });
+    typewriter
+        .typeString('HTML / S(CSS)')
+        .pauseFor(500)
+        .deleteAll(40)
+        .start()
+        .typeString('Javascript')
+        .pauseFor(500)
+        .deleteAll(40)
+        .start()
+        .typeString('Wordpress')
+        .pauseFor(500)
+        .deleteAll(40)
+        .start()
+        .typeString('PHP')
+        .pauseFor(500)
+        .deleteAll(40)
+        .typeString('Gulp')
+        .pauseFor(500)
+        .deleteAll(40);
+}
 
-typewriter
-    .typeString('HTML / S(CSS)')
-    .pauseFor(500)
-    .deleteAll(40)
-    .start()
-    .typeString('Javascript')
-    .pauseFor(500)
-    .deleteAll(40)
-    .start()
-    .typeString('Wordpress')
-    .pauseFor(500)
-    .deleteAll(40)
-    .start()
-    .typeString('PHP')
-    .pauseFor(500)
-    .deleteAll(40)
-    .typeString('Gulp')
-    .pauseFor(500)
-    .deleteAll(40);
+    anime({
+        targets: '.social-link',
+        translateX: 500,
+        delay: anime.stagger(200),
+        easing: 'spring(2, 95, 50, 0)'
+    });
 
+if ($(".home, .contact").length > 0) {
+    let hoverRise = document.getElementById("hover-rise");
 
-// social links slide-in animation
-anime({
-    targets: '.footer .social-links .social-link',
-    translateX: 500,
-    delay: anime.stagger(200),
-    easing: 'spring(2, 95, 50, 0)'
-});
+    const animateRise = (scale, duration, elasticity) => {
+    anime.remove(hoverRise); // not sure what this does //
+    anime({
+        targets: hoverRise,
+        scale: scale,
+        duration: duration,
+        elasticity: elasticity
+    });
+    }
+
+    const enterButton = () => { animateRise(1.07, 800, 400) };
+    const leaveButton = () => { animateRise(1.0, 600, 300) };
+
+    hoverRise.addEventListener('mouseenter', enterButton, false);
+    hoverRise.addEventListener('mouseleave', leaveButton, false);
+}

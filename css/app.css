@@ -285,6 +285,21 @@ a {
     @media screen and (max-width: 500px) {
       .footer .social-links {
         flex-direction: column; } }
+    .footer .social-links .social-link {
+      margin: 0rem 1rem; }
+      @media screen and (max-width: 770px) {
+        .footer .social-links .social-link {
+          transition: none; } }
+      .footer .social-links .social-link a img {
+        height: 50px;
+        width: auto; }
+        @media screen and (max-width: 770px) {
+          .footer .social-links .social-link a img {
+            margin: 1rem 0;
+            height: 30px; } }
+        @media screen and (max-width: 500px) {
+          .footer .social-links .social-link a img {
+            margin: 0.5rem 0; } }
   .footer .git,
   .footer .insta,
   .footer .linkedin {
@@ -292,24 +307,9 @@ a {
   .footer .git {
     left: -500px; }
   .footer .insta {
-    left: -430px; }
+    left: -420px; }
   .footer .linkedin {
-    left: -360px; }
-  .footer .social-link {
-    margin: 0rem 1rem; }
-    @media screen and (max-width: 770px) {
-      .footer .social-link {
-        transition: none; } }
-    .footer .social-link a img {
-      height: 50px;
-      width: auto; }
-      @media screen and (max-width: 770px) {
-        .footer .social-link a img {
-          margin: 1rem 0;
-          height: 30px; } }
-      @media screen and (max-width: 500px) {
-        .footer .social-link a img {
-          margin: 0.5rem 0; } }
+    left: -340px; }
   .footer .copyright {
     margin-right: 1.5rem;
     align-self: center;

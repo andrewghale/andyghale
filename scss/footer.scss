@@ -9,43 +9,39 @@
         @media screen and (max-width: $bp-phone) {
             flex-direction: column;
         }
+        .social-link {
+            margin: 0rem 1rem;
+            @media screen and (max-width: $bp-tablet) {
+                transition: none;
+            }
+            a {
+                img {
+                    height: 50px;
+                    width: auto;
+                    @media screen and (max-width: $bp-tablet) {
+                        margin: 1rem 0;
+                        height: 30px;
+                    }
+                    @media screen and (max-width: $bp-phone) {
+                        margin: 0.5rem 0;
+                    }
+                }
+            }
+        }
     }
     .git,
     .insta,
     .linkedin {
         position: absolute;
-        &:hover {
-            // @include hover-rise;
-            // transform: scale(1.5);
-        }
     }
     .git {
         left: -500px;
     }
     .insta {
-        left: -430px;
+        left: -420px;
     }
     .linkedin {
-        left: -360px;
-    }
-    .social-link {
-        margin: 0rem 1rem;
-        @media screen and (max-width: $bp-tablet) {
-            transition: none;
-        }
-        a {
-            img {
-                height: 50px;
-                width: auto;
-                @media screen and (max-width: $bp-tablet) {
-                    margin: 1rem 0;
-                    height: 30px;
-                }
-                @media screen and (max-width: $bp-phone) {
-                    margin: 0.5rem 0;
-                }
-            }
-        }
+        left: -340px;
     }
     .copyright {
         margin-right: 1.5rem;
