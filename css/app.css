@@ -239,16 +239,6 @@ a {
       .site-header .logo-holder .home-logo:hover {
         animation-name: pulse;
         animation-duration: 500ms; }
-      .site-header .logo-holder .home-logo .orange-square {
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1400;
-        animation: draw 4s ease-in-out 2s 1;
-        fill-opacity: 0; }
-      .site-header .logo-holder .home-logo .pink-square {
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1400;
-        animation: draw 5s ease-in-out 1s 1;
-        fill-opacity: 0; }
   .site-header .main-nav {
     display: flex;
     flex: 1;
@@ -295,9 +285,18 @@ a {
     @media screen and (max-width: 500px) {
       .footer .social-links {
         flex-direction: column; } }
+  .footer .git,
+  .footer .insta,
+  .footer .linkedin {
+    position: absolute; }
+  .footer .git {
+    left: -500px; }
+  .footer .insta {
+    left: -430px; }
+  .footer .linkedin {
+    left: -360px; }
   .footer .social-link {
-    margin: 0rem 1rem;
-    transition: transform 0.2s; }
+    margin: 0rem 1rem; }
     @media screen and (max-width: 770px) {
       .footer .social-link {
         transition: none; } }

@@ -28,3 +28,12 @@ typewriter
     .typeString('Gulp')
     .pauseFor(500)
     .deleteAll(40);
+
+
+// social links slide-in animation
+anime({
+    targets: '.footer .social-links .social-link',
+    translateX: 500,
+    delay: anime.stagger(200),
+    easing: 'spring(2, 95, 50, 0)'
+});

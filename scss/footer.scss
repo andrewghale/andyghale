@@ -10,9 +10,22 @@
             flex-direction: column;
         }
     }
+    .git,
+    .insta,
+    .linkedin {
+        position: absolute;
+    }
+    .git {
+        left: -500px;
+    }
+    .insta {
+        left: -430px;
+    }
+    .linkedin {
+        left: -360px;
+    }
     .social-link {
         margin: 0rem 1rem;
-        transition: transform 0.2s;
         @media screen and (max-width: $bp-tablet) {
             transition: none;
         }

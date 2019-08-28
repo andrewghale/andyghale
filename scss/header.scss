@@ -23,18 +23,18 @@
                 animation-name: pulse;
                 animation-duration: 500ms;
             }
-            .orange-square {
-                stroke-dashoffset:0;
-                stroke-dasharray:1400;
-                animation: draw 4s ease-in-out 2s 1;
-                fill-opacity: 0;
-            }
-            .pink-square {
-                stroke-dashoffset:0;
-                stroke-dasharray:1400;
-                animation: draw 5s ease-in-out 1s 1;
-                fill-opacity: 0;
-            }
+            // .orange-square {
+            //     stroke-dashoffset:0;
+            //     stroke-dasharray:1400;
+            //     animation: draw 4s ease-in-out 2s 1;
+            //     fill-opacity: 0;
+            // }
+            // .pink-square {
+            //     stroke-dashoffset:0;
+            //     stroke-dasharray:1400;
+            //     animation: draw 5s ease-in-out 1s 1;
+            //     fill-opacity: 0;
+            // }
         }
     }
     .main-nav {

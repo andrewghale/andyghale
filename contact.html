@@ -71,22 +71,6 @@
         <p class="copyright">© 2019 Andrew Hale</p>
     </footer>
     <script>
-
-        // function initMap() {
-        // var map = new google.maps.Map(document.getElementById('map'), {
-        //     zoom: 4,
-        //     center: {lat: -33, lng: 151}
-        // });
-
-        // var image = 'img/polygon.png';
-        // var beachMarker = new google.maps.Marker({
-        //     position: {lat: -33.890, lng: 151.274},
-        //     map: map,
-        //     icon: image
-        // });
-        // }
-
-
         function initMap() {
             var Bristol = {lat: 51.449851, lng: -2.597341};
 
@@ -100,7 +84,7 @@
                         "elementType": "all",
                         "stylers": [
                             {
-                                "saturation": "-100"
+                                "saturation": "-50"
                             }
                         ]
                     },
@@ -118,10 +102,10 @@
                         "elementType": "all",
                         "stylers": [
                             {
-                                "saturation": -100
+                                "saturation": -50
                             },
                             {
-                                "lightness": 65
+                                "lightness": 30
                             },
                             {
                                 "visibility": "on"
@@ -133,10 +117,10 @@
                         "elementType": "all",
                         "stylers": [
                             {
-                                "saturation": -100
+                                "saturation": -20
                             },
                             {
-                                "lightness": "50"
+                                "lightness": "20"
                             },
                             {
                                 "visibility": "simplified"
@@ -148,7 +132,7 @@
                         "elementType": "all",
                         "stylers": [
                             {
-                                "saturation": "-100"
+                                "saturation": "-50"
                             }
                         ]
                     },
@@ -196,13 +180,13 @@
                         "elementType": "geometry",
                         "stylers": [
                             {
-                                "hue": "#ffff00"
+                                "hue": "#82CACB"
                             },
                             {
-                                "lightness": -25
+                                "lightness": 0
                             },
                             {
-                                "saturation": -97
+                                "saturation": -30
                             }
                         ]
                     },
@@ -221,7 +205,7 @@
                 ]
             });
 
-            var image = 'img/polygon.png';
+            var image = 'img/pencil_arrow.png';
             var marker = new google.maps.Marker({
                 position: Bristol,
                 map: map,
