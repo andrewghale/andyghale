@@ -39,6 +39,7 @@
 
 // Social Icons rise on hover, absent on tablets and mobiles
 @mixin hover-rise {
+    // background: red;
     transform: translateY(-5px);
     transition: transform 0.2s;
     @media screen and (max-width: $bp-tablet) {

@@ -300,13 +300,6 @@ a {
     @media screen and (max-width: 770px) {
       .footer .social-link {
         transition: none; } }
-    .footer .social-link:hover {
-      transform: translateY(-5px);
-      transition: transform 0.2s; }
-      @media screen and (max-width: 770px) {
-        .footer .social-link:hover {
-          transform: translateY(0px);
-          transition: none; } }
     .footer .social-link a img {
       height: 50px;
       width: auto; }

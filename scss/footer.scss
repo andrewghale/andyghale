@@ -14,6 +14,10 @@
     .insta,
     .linkedin {
         position: absolute;
+        &:hover {
+            // @include hover-rise;
+            // transform: scale(1.5);
+        }
     }
     .git {
         left: -500px;
@@ -28,9 +32,6 @@
         margin: 0rem 1rem;
         @media screen and (max-width: $bp-tablet) {
             transition: none;
-        }
-        &:hover {
-            @include hover-rise;
         }
         a {
             img {
