@@ -10595,9 +10595,15 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
-$(document).ready(function () {
-    $(".reveal-page").delay(150).animate({ opacity: 1 }, 500);
-    $(".reveal-map").delay(1000).animate({ opacity: 1 }, 800);
+document.addEventListener("DOMContentLoaded", function(){
+    const revealPage = document.getElementsByClassName("reveal-page");
+    setTimeout(function(){
+        revealPage[0].classList.add("show");
+    }, 500);
+    const revealMap = document.getElementsByClassName("reveal-map");
+    if (revealMap) {
+        revealMap[0].classList.add("show");
+    }
 });
 
 // TypewriterJS
@@ -10655,20 +10661,27 @@ if ($(".home").length > 0 ) {
 
 // git logo rises on hover
 if ($(".home, .about, .contact").length > 0) {
-    let hoverRise = document.getElementById("hover-rise");
+    let hoverRise = $(".hover-rise");
     const animateRise = (scale, duration, elasticity) => {
-    anime.remove(hoverRise); // not sure what this does //
-    anime({
-        targets: hoverRise,
-        scale: scale,
-        duration: duration,
-        elasticity: elasticity
-    });
+        // anime.remove(hoverRise); // not sure what this does //
+        anime({
+            targets: hoverRise,
+            scale: scale,
+            duration: duration,
+            elasticity: elasticity
+        });
     }
-    const enterButton = () => { animateRise(1.07, 800, 400) };
-    const leaveButton = () => { animateRise(1.0, 600, 300) };
-    hoverRise.addEventListener('mouseenter', enterButton, false);
-    hoverRise.addEventListener('mouseleave', leaveButton, false);
+    function enterButton() {
+        animateRise(1.07, 800, 400);
+        console.log('In');
+    };
+
+    function leaveButton() {
+        animateRise(1.0, 600, 300);
+        console.log('Out');
+    };
+    hoverRise.on('mouseenter', enterButton);
+    hoverRise.on('mouseleave', leaveButton);
 }
 
 //# sourceMappingURL=app.js.map
