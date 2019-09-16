@@ -16,12 +16,15 @@
         .home-logo {
             height: 100px;
             width: auto;
+            transition: transform 0.2s;
+            transition-timing-function: cubic-bezier(.43,1.95,.51,.71);
             @media screen and (max-width: $bp-phone) {
                 height: 60px;
             }
             &:hover {
-                animation-name: pulse;
-                animation-duration: 500ms;
+                transform: scale(1.1);
+                transition: transform 0.2s;
+                transition-timing-function: cubic-bezier(.43,1.95,.51,.71);
             }
             // .orange-square {
             //     stroke-dashoffset:0;

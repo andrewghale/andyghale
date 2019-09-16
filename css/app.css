@@ -191,7 +191,10 @@ a {
 
 .show {
   opacity: 1;
-  transition: all 2s ease-in-out; }
+  transition: all 1.5s ease-in-out; }
+
+.hover-rise {
+  transform: translateY(20px); }
 
 #no-link {
   background: none;
@@ -227,13 +230,16 @@ a {
         margin-left: 0; } }
     .site-header .logo-holder .home-logo {
       height: 100px;
-      width: auto; }
+      width: auto;
+      transition: transform 0.2s;
+      transition-timing-function: cubic-bezier(0.43, 1.95, 0.51, 0.71); }
       @media screen and (max-width: 500px) {
         .site-header .logo-holder .home-logo {
           height: 60px; } }
       .site-header .logo-holder .home-logo:hover {
-        animation-name: pulse;
-        animation-duration: 500ms; }
+        transform: scale(1.1);
+        transition: transform 0.2s;
+        transition-timing-function: cubic-bezier(0.43, 1.95, 0.51, 0.71); }
   .site-header .main-nav {
     display: flex;
     flex: 1;
@@ -308,6 +314,12 @@ a {
     @media screen and (max-width: 500px) {
       .footer .copyright {
         align-self: flex-end; } }
+
+.social-link {
+  transition: all 0.2s cubic-bezier(0.43, 1.95, 0.51, 0.71); }
+  .social-link:hover {
+    transform: scale(1.1);
+    transition: all 0.2s cubic-bezier(0.43, 1.95, 0.51, 0.71); }
 
 .home .tag {
   background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%); }

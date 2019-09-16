@@ -44,3 +44,11 @@
         }
     }
 }
+
+.social-link {
+    transition: all 0.2s cubic-bezier(.43,1.95,.51,.71);
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.2s cubic-bezier(.43,1.95,.51,.71);
+    }
+}

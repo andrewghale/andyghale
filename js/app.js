@@ -10600,10 +10600,10 @@ document.addEventListener("DOMContentLoaded", function(){
     setTimeout(function(){
         revealPage[0].classList.add("show");
     }, 500);
-    const revealMap = document.getElementsByClassName("reveal-map");
-    if (revealMap) {
-        revealMap[0].classList.add("show");
-    }
+    // const revealMap = document.getElementsByClassName("reveal-map");
+    // if (revealMap) {
+    //     revealMap[0].classList.add("show");
+    // }
 });
 
 // TypewriterJS
@@ -10633,24 +10633,47 @@ if ($(".home").length > 0) {
         .deleteAll(40);
 }
 
-let logoRise = document.getElementById("home-logo");
-const animateRise = (scale, duration, elasticity) => {
-    anime.remove(logoRise); // not sure what this does //
-    anime({
-        targets: logoRise,
-        scale: scale,
-        duration: duration,
-        elasticity: elasticity
-    });
-}
-const enterButton = () => { animateRise(1.07, 800, 400) };
-const leaveButton = () => { animateRise(1.0, 600, 300) };
-logoRise.addEventListener('mouseenter', enterButton, false);
-logoRise.addEventListener('mouseleave', leaveButton, false);
+// let logoRise = document.getElementById("home-logo");
+// const scaleHandler = (scale, duration, elasticity) => {
+//     // anime.remove(logoRise);
+//     anime({
+//         targets: logoRise,
+//         scale: scale,
+//         duration: duration,
+//         elasticity: elasticity
+//     });
+// }
+// const enterHandler = () => { scaleHandler(1.07, 800, 400) };
+// const leaveHandler = () => { scaleHandler(1.0, 600, 300) };
+// logoRise.addEventListener('mouseenter', enterHandler, false);
+// logoRise.addEventListener('mouseleave', leaveHandler, false);
+
+
+
+// $(".social-link").mouseover(function(){
+//     $(".social-link").addClass("hover-rise");
+//   })
+
+
+// let socialLink = document.getElementsByClassName("social-link");
+// const animateSocialRise = (scale, duration, elasticity) => {
+//     anime.remove(logoRise);
+//     anime({
+//         targets: socialLink[0],
+//         scale: scale,
+//         duration: duration,
+//         elasticity: elasticity
+//     });
+// }
+// const enterLink = () => { animateSocialRise(1.07, 800, 400) };
+// const leaveLink = () => { animateSocialRise(1.0, 600, 300) };
+// socialLink[0].addEventListener('mouseenter', enterLink, false);
+// socialLink[0].addEventListener('mouseleave', leaveLink, false);
 
 
 // homepage social icons slide in
-if ($(".home").length > 0 ) {
+
+if (document.getElementsByClassName("home").length>0) {
     anime({
         targets: '.social-link',
         translateX: 500,
@@ -10659,29 +10682,6 @@ if ($(".home").length > 0 ) {
     });
 }
 
-// git logo rises on hover
-if ($(".home, .about, .contact").length > 0) {
-    let hoverRise = $(".hover-rise");
-    const animateRise = (scale, duration, elasticity) => {
-        // anime.remove(hoverRise); // not sure what this does //
-        anime({
-            targets: hoverRise,
-            scale: scale,
-            duration: duration,
-            elasticity: elasticity
-        });
-    }
-    function enterButton() {
-        animateRise(1.07, 800, 400);
-        console.log('In');
-    };
 
-    function leaveButton() {
-        animateRise(1.0, 600, 300);
-        console.log('Out');
-    };
-    hoverRise.on('mouseenter', enterButton);
-    hoverRise.on('mouseleave', leaveButton);
-}
 
 //# sourceMappingURL=app.js.map
