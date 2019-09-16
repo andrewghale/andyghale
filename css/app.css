@@ -53,6 +53,18 @@
   100% {
     background-position-x: 90%; } }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-250px); }
+  100% {
+    transform: translateX(260px); } }
+
+@keyframes makeBigger {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+
 * {
   box-sizing: border-box; }
 
@@ -283,9 +295,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media screen and (max-width: 500px) {
-      .footer .social-links {
-        flex-direction: column; } }
     .footer .social-links .social-link {
       margin: 0rem 1rem; }
       @media screen and (max-width: 770px) {
@@ -296,11 +305,7 @@ a {
         width: auto; }
         @media screen and (max-width: 770px) {
           .footer .social-links .social-link a img {
-            margin: 1rem 0;
             height: 30px; } }
-        @media screen and (max-width: 500px) {
-          .footer .social-links .social-link a img {
-            margin: 0.5rem 0; } }
   .footer .copyright {
     margin-right: 1.5rem;
     align-self: center;
@@ -390,17 +395,27 @@ a {
   .home #typewriter .Typewriter__cursor {
     color: #282828; }
 
-.home .footer .git, .home .footer .insta, .home .footer .linkedin {
-  position: absolute; }
-
-.home .footer .git {
-  left: -500px; }
-
-.home .footer .insta {
-  left: -420px; }
-
-.home .footer .linkedin {
-  left: -340px; }
+.home .footer {
+  position: relative; }
+  .home .footer .social-links {
+    position: absolute;
+    left: -250px; }
+  .home .footer .git, .home .footer .insta, .home .footer .linkedin {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-name: slideInFromLeft;
+    animation-fill-mode: forwards; }
+  .home .footer .git {
+    animation-duration: 1.5s;
+    animation-delay: 0s; }
+  .home .footer .insta {
+    animation-duration: 1.3s;
+    animation-delay: 0.3s; }
+  .home .footer .linkedin {
+    animation-duration: 1.1s;
+    animation-delay: 0.6s; }
+  .home .footer .copyright {
+    margin-left: auto; }
 
 .about .tag:hover {
   color: #282828; }

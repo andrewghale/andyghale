@@ -76,13 +76,13 @@ if ($(".home").length > 0) {
 
 // homepage social icons slide in
 
-if (document.getElementsByClassName("home").length>0) {
-    anime({
-        targets: '.social-link',
-        translateX: 500,
-        delay: anime.stagger(300),
-        easing: 'spring(2, 95, 50, 0)'
-    });
-}
+// if (document.getElementsByClassName("home").length>0) {
+//     anime({
+//         targets: '.social-link',
+//         translateX: 500,
+//         delay: anime.stagger(300),
+//         easing: 'spring(2, 95, 50, 0)'
+//     });
+// }
 
 

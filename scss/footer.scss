@@ -6,9 +6,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: $bp-phone) {
-            flex-direction: column;
-        }
         .social-link {
             margin: 0rem 1rem;
             @media screen and (max-width: $bp-tablet) {
@@ -19,11 +16,7 @@
                     height: 50px;
                     width: auto;
                     @media screen and (max-width: $bp-tablet) {
-                        margin: 1rem 0;
                         height: 30px;
-                    }
-                    @media screen and (max-width: $bp-phone) {
-                        margin: 0.5rem 0;
                     }
                 }
             }
