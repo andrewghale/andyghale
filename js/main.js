@@ -1,39 +1,46 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const revealPage = document.getElementsByClassName("reveal-page");
-    setTimeout(function(){
-        revealPage[0].classList.add("show");
-    }, 500);
+document.addEventListener("DOMContentLoaded", function() {
+    const revealPage = document.querySelectorAll(".reveal-page");
+        if (revealPage) {
+        setTimeout(() => {
+            revealPage[0].classList.add("show");
+        }, 100);
+    }
     // const revealMap = document.getElementsByClassName("reveal-map");
     // if (revealMap) {
     //     revealMap[0].classList.add("show");
     // }
+    if (homePage) {
+
+    }
 });
 
 // TypewriterJS
-if ($(".home").length > 0) {
+
+const homePage = document.querySelectorAll(".home");
+if (homePage) {
     const typewriter = new Typewriter('#typewriter', {
         autoStart: true,
         loop: true,
     });
     typewriter
-        .typeString('HTML / S(CSS)')
-        .pauseFor(500)
-        .deleteAll(40)
-        .start()
-        .typeString('Javascript')
-        .pauseFor(500)
-        .deleteAll(40)
-        .start()
-        .typeString('Wordpress')
-        .pauseFor(500)
-        .deleteAll(40)
-        .start()
-        .typeString('PHP')
-        .pauseFor(500)
-        .deleteAll(40)
-        .typeString('Gulp')
-        .pauseFor(500)
-        .deleteAll(40);
+    .typeString('HTML / S(CSS)')
+    .pauseFor(500)
+    .deleteAll(40)
+    .start()
+    .typeString('Javascript')
+    .pauseFor(500)
+    .deleteAll(40)
+    .start()
+    .typeString('Wordpress')
+    .pauseFor(500)
+    .deleteAll(40)
+    .start()
+    .typeString('PHP')
+    .pauseFor(500)
+    .deleteAll(40)
+    .typeString('Gulp')
+    .pauseFor(500)
+    .deleteAll(40);
 }
 
 // let logoRise = document.getElementById("home-logo");

@@ -77,6 +77,15 @@
         .social-links {
             position: absolute;
             left: -250px;
+            .social-link {
+                .link-container {
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.15);
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
         }
         .git, .insta, .linkedin {
             animation-timing-function: ease-in-out;

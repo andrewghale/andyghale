@@ -203,7 +203,7 @@ a {
 
 .show {
   opacity: 1;
-  transition: all 1.5s ease-in-out; }
+  transition: all 1s ease-in-out; }
 
 .hover-rise {
   transform: translateY(20px); }
@@ -400,6 +400,11 @@ a {
   .home .footer .social-links {
     position: absolute;
     left: -250px; }
+    .home .footer .social-links .social-link .link-container {
+      transition: all 0.3s ease-in-out; }
+      .home .footer .social-links .social-link .link-container:hover {
+        transform: scale(1.15);
+        transition: all 0.2s ease-in-out; }
   .home .footer .git, .home .footer .insta, .home .footer .linkedin {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
